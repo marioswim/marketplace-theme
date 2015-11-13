@@ -111,7 +111,48 @@
   <?php endif; ?>
   <?php print render($content['comments']); ?>
 <?php if($page):?>
-  <div class ="col-lg-6"><h1>Grupos</h1></div>
+  <div class ="col-lg-12">
+  <h1>Grupos</h1>
+  <?php
+
+        $lan    = $node->language;
+        $nid    = $node->nid;
+        
+        /*$uri    = request_uri();
+        $pos    = strrpos($uri,"/")+1;
+        $idGrp  = substr($uri, $pos);
+    */
+        $query  = 
+
+          " SELECT *
+            FROM  node n,
+                  field_data_field_id_grupo i
+            WHERE n.nid = i.entity_id 
+                  AND
+                  i.field_id_grupo_tid in (
+
+              SELECT t1.tid
+              FROM  node n1, 
+                    field_data_field_grupos_relacionados g1, 
+                    taxonomy_term_data t1
+              WHERE n1.nid=".$nid."
+                    AND
+                    n1.nid=g1.entity_id 
+                    AND 
+                    g1.field_grupos_relacionados_tid = t1.tid) AND n.language = '".$lan."'";
+                    
+        
+        $result=db_query($query);
+        foreach ($result as $row) 
+        {
+            echo '<div class="product">
+                    <span>'.$row->title.'</span>';
+            echo '  <a href="/'.$lan.'/'.drupal_get_path_alias("node/".$row->nid).'">enlace</a>
+                  </div>';
+        }
+        
+        ?>
+  </div>
 <?php endif;?>
 </article>
 <?php if($page):?>
