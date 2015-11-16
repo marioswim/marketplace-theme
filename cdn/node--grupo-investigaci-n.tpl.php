@@ -79,7 +79,7 @@
  * @ingroup templates
  */
 ?>
-<article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix <?php if($page){ print 'col-lg-6';}?>"<?php if($page)?><?php print $attributes; ?>>
+<article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix <?php if($page){ print 'col-lg-7';}?>"<?php if($page)?><?php print $attributes; ?>>
   <?php if ((!$page && !empty($title)) || !empty($title_prefix) || !empty($title_suffix) || $display_submitted): ?>
   <header>
 
@@ -106,14 +106,18 @@
   ?>
   <?php if (!empty($content['field_tags']) || !empty($content['links'])): ?>
   <footer>
-    <?php print render($content['field_tags']); ?>
+    <?php print render($content['field_tags']); 
+        //dpm($node);
+    ?>
     <?php //print render($content['links']); ?>
   </footer>
   <?php endif; ?>
   <?php print render($content['comments']); ?>
 <?php if($page):?>
-  <div class ="col-lg-12">
-  <p><b>Productos Relacionados</b></p>
+  <div class ="col-lg-12 offer-products">
+  <div id="title">
+    <span><?php echo t("<b>Offered</b> products, services and patents");?></span>
+  </div>
   
     <?php
 
@@ -144,7 +148,7 @@
         {
             echo '<div class="product">
                     <span>'.$row->title.'</span>';
-            echo '  <a href="/'.$lan.'/'.drupal_get_path_alias("node/".$row->nid).'">enlace</a>
+            echo '  <a id="link" href="/'.$lan.'/'.drupal_get_path_alias("node/".$row->nid).'"></a>
                   </div>';
         }
         
@@ -153,9 +157,48 @@
 <?php endif;?>
 </article>
 <?php if($page):?>
-<div class="col-lg-6">
-<div class ="col-lg-12"><h1>Video</h1></div>
-  <div class ="col-lg-12"><h1>con</h1></div>
+<div class="col-lg-5">
+<div class ="col-lg-12">
+  
+  <?php
+    echo '<iframe width="100%" height="280px" src="https://www.youtube.com/embed/'.$node->field_video["und"][0]["value"].'" frameborder="0" allowfullscreen></iframe>'
+  ?>
+  </div>
+  <div class ="col-lg-12 contacto">
+    <p><?php echo t("Do you need any further information?");?> </p>
+
+    <form>
+      <fieldset> 
+      <div class="">
+        <input type="text" id="textForm" name="name" placeholder="<?php echo t("Name");?>" required="" >
+      </div>
+      <div class="">
+        <input type="text" id="textForm" name="email" placeholder="Email" required="" >
+      </div>
+      <div class="">
+        <input type="text" id="textForm" name="telephone" placeholder="<?php echo t("Telephone");?>" required="" >
+               
+      </div>
+      <div class="">
+       <input type="text" id="textForm" name="subject" placeholder="<?php echo t("Subject");?>" required="" >
+               
+      </div>
+      <div class="">
+       <textarea type="text" id="textForm" rows="6" name="message" placeholder="<?php echo t("Message");?>" required="" ></textarea>
+               
+      </div>
+      <div class="checkbox">
+        <input id="check_politica" type="checkbox" name="check_politica" required="" class="">
+       
+       <span class="ng-scope"><?php echo t("I accept the ");?><a ui-sref="static.politica" href="#!/static/politica"><?php echo t("privacy policy");?></a></span>
+               
+      </div>
+     <button type="submit" class="btn btn-default "><?php echo t("Send");?></button>
+           
+      </fieldset>
+    </form>
+    
+  </div>
 </div>
 
 <?php endif; ?>

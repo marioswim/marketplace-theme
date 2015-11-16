@@ -106,10 +106,10 @@
   <?php if (!empty($content['field_tags']) || !empty($content['links'])): ?>
   <footer>
     <?php print render($content['field_tags']); ?>
-    <?php print render($content['links']); ?>
+    <?php //print render($content['links']); ?>
   </footer>
   <?php endif; ?>
-  <?php print render($content['comments']); ?>
+  <?php //print render($content['comments']); ?>
 <?php if($page):?>
   <div class ="col-lg-12">
   <h1>Grupos</h1>
@@ -145,7 +145,7 @@
         $result=db_query($query);
         foreach ($result as $row) 
         {
-            echo '<div class="product">
+            echo '<div class="research-grpup">
                     <span>'.$row->title.'</span>';
             echo '  <a href="/'.$lan.'/'.drupal_get_path_alias("node/".$row->nid).'">enlace</a>
                   </div>';

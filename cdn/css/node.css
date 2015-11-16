@@ -1,0 +1,279 @@
+.node-type-grupo-investigaci-n .page-header
+{
+	border-bottom: 0px;
+
+}
+.node-type-grupo-investigaci-n .field-name-body ,
+.node-type-grupo-investigaci-n .field-name-field-area,
+.node-type-grupo-investigaci-n .field-name-field-contacto ,
+.node-type-grupo-investigaci-n .field-name-field-email ,
+.node-type-grupo-investigaci-n .field-name-field-telefono,
+.node-type-grupo-investigaci-n .field-name-field-direcci-n 
+{
+	min-height: 29px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 20px;
+    list-style: none;
+	border-top: 1px solid #d8dadc;
+}
+.node-type-grupo-investigaci-n .field-name-body  .field-label,
+.node-type-grupo-investigaci-n .field-name-field-area .field-label,
+.node-type-grupo-investigaci-n .field-name-field-contacto  .field-label,
+.node-type-grupo-investigaci-n .field-name-field-email  .field-label,
+.node-type-grupo-investigaci-n .field-name-field-telefono .field-label,
+.node-type-grupo-investigaci-n .field-name-field-direcci-n .field-label
+{
+	font-family: Lato, sans-serif;
+	font-size: 14px;
+	height: 20px;
+	line-height: 20px;
+}
+.node-type-grupo-investigaci-n .field-name-field-direcci-n 
+{
+
+	border-bottom: 1px solid #d8dadc;
+}
+.node-type-grupo-investigaci-n .field-name-field-area .field-items,
+.node-type-grupo-investigaci-n .field-name-field-contacto .field-items,
+.node-type-grupo-investigaci-n .field-name-field-email .field-items,
+.node-type-grupo-investigaci-n .field-name-field-telefono .field-items
+{
+	float: right;
+}
+.node-type-grupo-investigaci-n .field-name-body .field-items
+{
+	
+	font-family: Lato, sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+	list-style-image: none;
+	list-style-position: outside;
+	list-style-type: none;
+	margin-bottom: 10px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	padding-right: 0px;
+	text-align: justify;
+}
+
+.node-type-grupo-investigaci-n .offer-products
+{
+	margin-top: 50px;
+
+}
+.node-type-grupo-investigaci-n .offer-products #title
+{
+	border-bottom: 1px solid #e47516;
+}
+.node-type-grupo-investigaci-n .offer-products #title>span
+{
+	background-attachment: scroll;
+	background-clip: border-box;
+	background-color: rgba(0, 0, 0, 0);
+	background-image: linear-gradient(rgb(228, 117, 22) 0px, rgb(196, 100, 19) 100%);
+	background-origin: padding-box;
+	background-size: auto;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	color: rgb(247, 213, 188);
+	display: block;
+	font-family: Lato, sans-serif;
+	font-size: 17px;
+	
+	line-height: 20px;
+	padding-bottom: 12px;
+
+	padding-top: 12px;
+	text-align: center;
+	width: 341px;
+}
+.node-type-grupo-investigaci-n .offer-products .product
+{
+	
+	background-color: rgba(0, 0, 0, 0);
+	background-image: radial-gradient(at 50% 50%, rgb(231, 232, 233) 0px, rgb(211, 212, 213) 100%);
+	background-origin: padding-box;
+	background-size: auto;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	color: rgb(51, 51, 51);
+	
+	font-family: Lato, sans-serif;
+	font-size: 14px;
+	font-weight: bolder;
+	line-height: 20px;
+	list-style-image: none;
+	list-style-position: outside;
+	list-style-type: none;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	text-align: left;
+	margin: 10px 0px 10px 0px;
+}
+.node-type-grupo-investigaci-n .offer-products .product #link
+{
+	float: right;
+	
+	width: 19px;
+	height: 19px;
+	background-image: url("../images/BOTON_CIRCULO_FLECHITA-ON.png");
+}
+.node-type-grupo-investigaci-n .contacto
+{
+    text-align: center;
+    margin-top: 30px;
+    background-color: #fbeade;
+    background-image: url("../images/FONDO_FORMULARIO.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    padding: 47px 0px 47px 0px;
+
+}
+
+.node-type-grupo-investigaci-n .contacto>p
+{
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 22px;
+	font-weight: bold;
+	line-height: 20px;
+	margin-bottom: 22px;
+
+}
+.node-type-grupo-investigaci-n .contacto #textForm
+{
+	-webkit-appearance: none;
+	-webkit-rtl-ordering: logical;
+	-webkit-user-select: text;
+	background-color: rgb(255, 255, 255);
+	border-bottom-color: rgb(216, 160, 113);
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-image-outset: 0px;
+	border-image-repeat: stretch;
+	border-image-slice: 100%;
+	border-image-source: none;
+	border-image-width: 1;
+	border-left-color: rgb(216, 160, 113);
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-right-color: rgb(216, 160, 113);
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-top-color: rgb(216, 160, 113);
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	border-top-style: solid;
+	border-top-width: 1px;
+	box-shadow: rgba(0, 0, 0, 0.0745098) 0px 1px 1px 0px inset, rgba(228, 119, 23, 0.301961) 0px 0px 4.00149px 0px;
+	color: rgb(228, 117, 22);
+	cursor: auto;
+	display: inline-block;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-stretch: normal;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	
+	letter-spacing: normal;
+	line-height: 20px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	padding-bottom: 4px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 4px;
+	text-align: start;
+	text-indent: 0px;
+	text-rendering: auto;
+	text-shadow: none;
+	text-transform: none;
+	transition-delay: 0s, 0s;
+	transition-duration: 0.2s, 0.2s;
+	transition-property: border, box-shadow;
+	transition-timing-function: linear, linear;
+	vertical-align: middle;
+	width: 315px;
+	word-spacing: 0px;
+	writing-mode: lr-tb;
+	-webkit-writing-mode: horizontal-tb;
+}
+.node-type-grupo-investigaci-n .contacto button
+{
+	background-color: #e47516;
+	-webkit-appearance: none;
+	align-items: flex-start;
+	background-attachment: scroll;
+	background-clip: border-box;
+	background-color:  #e47516;
+
+	background-origin: padding-box;
+	background-size: auto;
+	border-bottom-color: rgb(247, 154, 12);
+	border-bottom-style: none;
+	border-bottom-width: 0px;
+	border-image-outset: 0px;
+	border-image-repeat: stretch;
+	border-image-slice: 100%;
+	border-image-source: none;
+	border-image-width: 1;
+	border-left-color: rgb(247, 154, 12);
+	border-left-style: none;
+	border-left-width: 0px;
+	border-right-color: rgb(247, 154, 12);
+	border-right-style: none;
+	border-right-width: 0px;
+	border-top-color: rgb(247, 154, 12);
+	border-top-style: none;
+	border-top-width: 0px;
+	box-sizing: border-box;
+	color: white;
+	cursor: pointer;
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-stretch: normal;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	height: 41px;
+	letter-spacing: normal;
+	line-height: 20px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	min-width: 100px;
+	padding-bottom: 10px;
+	padding-left: 28px;
+	padding-right: 28px;
+	padding-top: 11px;
+	text-align: center;
+	text-decoration: none;
+	text-indent: 0px;
+	text-rendering: auto;
+	text-shadow: none;
+	text-transform: none;
+	vertical-align: middle;
+	width: 100px;
+	word-spacing: 0px;
+	writing-mode: lr-tb;
+	-webkit-writing-mode: horizontal-tb;
+}
+
+.node-type-grupo-investigaci-n .contacto button:hover
+{
+	background-color: #F79A0C;
