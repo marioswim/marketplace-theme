@@ -118,6 +118,10 @@
 	text-align: left;
 	margin: 10px 0px 10px 0px;
 }
+.node-type-grupo-investigaci-n .offer-products .product:hover
+{
+	background: #fbeade;
+}
 .node-type-grupo-investigaci-n .offer-products .product #link
 {
 	float: right;
@@ -150,35 +154,29 @@
 }
 .node-type-grupo-investigaci-n .contacto #textForm
 {
-	-webkit-appearance: none;
-	-webkit-rtl-ordering: logical;
-	-webkit-user-select: text;
+	width: 315px;
+	margin: 0px 0px 10px 0px;
+	padding:4px 15px 4px 15px;
+
+	border:1px solid;
+	border-radius: 4px;
+	border-color: #ccc;
+
 	background-color: rgb(255, 255, 255);
-	border-bottom-color: rgb(216, 160, 113);
-	border-bottom-left-radius: 4px;
-	border-bottom-right-radius: 4px;
-	border-bottom-style: solid;
-	border-bottom-width: 1px;
-	border-image-outset: 0px;
+	
+	color: rgb(228, 117, 22);
+
+	/*border-image-outset: 0px;
 	border-image-repeat: stretch;
 	border-image-slice: 100%;
 	border-image-source: none;
-	border-image-width: 1;
-	border-left-color: rgb(216, 160, 113);
-	border-left-style: solid;
-	border-left-width: 1px;
-	border-right-color: rgb(216, 160, 113);
-	border-right-style: solid;
-	border-right-width: 1px;
-	border-top-color: rgb(216, 160, 113);
-	border-top-left-radius: 4px;
-	border-top-right-radius: 4px;
-	border-top-style: solid;
-	border-top-width: 1px;
-	box-shadow: rgba(0, 0, 0, 0.0745098) 0px 1px 1px 0px inset, rgba(228, 119, 23, 0.301961) 0px 0px 4.00149px 0px;
-	color: rgb(228, 117, 22);
+	border-image-width: 1;*/
+	
+	
+	
 	cursor: auto;
 	display: inline-block;
+
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 14px;
 	font-stretch: normal;
@@ -186,31 +184,22 @@
 	font-variant: normal;
 	font-weight: normal;
 	
-	letter-spacing: normal;
-	line-height: 20px;
-	margin-bottom: 10px;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 0px;
-	padding-bottom: 4px;
-	padding-left: 15px;
-	padding-right: 15px;
-	padding-top: 4px;
+	/*letter-spacing: normal;
+	line-height: 20px;*/
+
+	outline: none;
 	text-align: start;
 	text-indent: 0px;
 	text-rendering: auto;
 	text-shadow: none;
-	text-transform: none;
-	transition-delay: 0s, 0s;
-	transition-duration: 0.2s, 0.2s;
-	transition-property: border, box-shadow;
-	transition-timing-function: linear, linear;
-	vertical-align: middle;
-	width: 315px;
+	text-transform: none;	
 	word-spacing: 0px;
 	writing-mode: lr-tb;
-	-webkit-writing-mode: horizontal-tb;
+	vertical-align: middle;
+
+
 }
+
 .node-type-grupo-investigaci-n .contacto button
 {
 	background-color: #e47516;
@@ -277,3 +266,32 @@
 .node-type-grupo-investigaci-n .contacto button:hover
 {
 	background-color: #F79A0C;
+}
+
+/*
+.node-type-grupo-investigaci-n .contacto #textForm:
+{
+	
+	border-bottom-color: rgb(216, 160, 113);
+
+	border-left-color: rgb(216, 160, 113);
+
+	border-right-color: rgb(216, 160, 113);
+
+	border-top-color: rgb(216, 160, 113);
+	transition-delay: 0s, 0s;
+	transition-duration: 0.2s, 0.2s;
+	transition-property: border, box-shadow;
+	transition-timing-function: linear, linear;
+	
+		-webkit-appearance: none;
+	-webkit-rtl-ordering: logical;
+	-webkit-user-select: text;
+	
+	-webkit-writing-mode: horizontal-tb;
+}*/
+.node-type-grupo-investigaci-n .contacto #textForm:focus
+{
+	border: 1px solid #e47516;
+    box-shadow: 0 1px 1px rgba(0,0,0,.075) inset,0 0 8px rgba(228,117,22,.6);
+}

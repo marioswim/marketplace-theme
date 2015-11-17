@@ -4,7 +4,8 @@
 .node-type-grupo-investigaci-n .field-name-field-contacto .field-items,
 .node-type-grupo-investigaci-n .field-name-field-email .field-items,
 .node-type-grupo-investigaci-n .field-name-field-telefono .field-items,
-.node-type-grupo-investigaci-n .field-name-field-direcci-n .field-items
+.node-type-grupo-investigaci-n .field-name-field-direcci-n .field-items,
+.node-type-grupo-investigaci-n .contacto>p
 {
 	color:#e47516;
 }
