@@ -1,4 +1,5 @@
-.node-type-grupo-investigaci-n .page-header
+.node-type-grupo-investigaci-n .page-header,
+.node-type-producto .page-header
 {
 	border-bottom: 0px;
 
@@ -8,7 +9,12 @@
 .node-type-grupo-investigaci-n .field-name-field-contacto ,
 .node-type-grupo-investigaci-n .field-name-field-email ,
 .node-type-grupo-investigaci-n .field-name-field-telefono,
-.node-type-grupo-investigaci-n .field-name-field-direcci-n 
+.node-type-grupo-investigaci-n .field-name-field-direcci-n,
+.node-type-producto .field-name-body ,
+.node-type-producto .field-name-field-inventores,
+.node-type-producto .field-name-field-estado,
+.node-type-producto .field-name-field-contacto ,
+.node-type-producto .field-name-field-email 
 {
 	min-height: 29px;
     padding-top: 9px;
@@ -22,14 +28,21 @@
 .node-type-grupo-investigaci-n .field-name-field-contacto  .field-label,
 .node-type-grupo-investigaci-n .field-name-field-email  .field-label,
 .node-type-grupo-investigaci-n .field-name-field-telefono .field-label,
-.node-type-grupo-investigaci-n .field-name-field-direcci-n .field-label
+.node-type-grupo-investigaci-n .field-name-field-direcci-n .field-label,
+.node-type-producto .field-name-body  .field-label,
+.node-type-producto .field-name-field-inventores .field-label,
+.node-type-producto .field-name-field-estado .field-label,
+.node-type-producto .field-name-field-contacto  .field-label,
+.node-type-producto .field-name-field-email .field-label
 {
 	font-family: Lato, sans-serif;
+	
 	font-size: 14px;
 	height: 20px;
 	line-height: 20px;
 }
-.node-type-grupo-investigaci-n .field-name-field-direcci-n 
+.node-type-grupo-investigaci-n .field-name-field-direcci-n,
+.node-type-producto .field-name-field-email
 {
 
 	border-bottom: 1px solid #d8dadc;
@@ -37,11 +50,16 @@
 .node-type-grupo-investigaci-n .field-name-field-area .field-items,
 .node-type-grupo-investigaci-n .field-name-field-contacto .field-items,
 .node-type-grupo-investigaci-n .field-name-field-email .field-items,
-.node-type-grupo-investigaci-n .field-name-field-telefono .field-items
+.node-type-grupo-investigaci-n .field-name-field-telefono .field-items,
+.node-type-producto .field-name-field-estado .field-items,
+.node-type-producto .field-name-field-inventores .field-items,
+.node-type-producto .field-name-field-contacto  .field-items,
+.node-type-producto .field-name-field-email .field-items
 {
 	float: right;
 }
 .node-type-grupo-investigaci-n .field-name-body .field-items
+.node-type-producto .field-name-body .field-items
 {
 	
 	font-family: Lato, sans-serif;
@@ -58,44 +76,40 @@
 	text-align: justify;
 }
 
-.node-type-grupo-investigaci-n .offer-products
+.node-type-grupo-investigaci-n .offer-products,
+.node-type-producto .related-groups
 {
 	margin-top: 50px;
 
 }
-.node-type-grupo-investigaci-n .offer-products #title
-{
-	border-bottom: 1px solid #e47516;
-}
-.node-type-grupo-investigaci-n .offer-products #title>span
+
+.node-type-grupo-investigaci-n .offer-products #title>span,
+.node-type-producto .related-groups #title > span
 {
 	background-attachment: scroll;
 	background-clip: border-box;
 	background-color: rgba(0, 0, 0, 0);
-	background-image: linear-gradient(rgb(228, 117, 22) 0px, rgb(196, 100, 19) 100%);
+
 	background-origin: padding-box;
 	background-size: auto;
 	border-bottom-left-radius: 0px;
 	border-bottom-right-radius: 0px;
 	border-top-left-radius: 3px;
-	border-top-right-radius: 3px;
-	color: rgb(247, 213, 188);
+	border-top-right-radius: 3px;	
 	display: block;
 	font-family: Lato, sans-serif;
-	font-size: 17px;
-	
+	font-size: 17px;	
 	line-height: 20px;
 	padding-bottom: 12px;
-
 	padding-top: 12px;
 	text-align: center;
 	width: 341px;
 }
-.node-type-grupo-investigaci-n .offer-products .product
+.node-type-grupo-investigaci-n .offer-products .product,
+.node-type-producto .related-groups .research-group
 {
 	
 	background-color: rgba(0, 0, 0, 0);
-	background-image: radial-gradient(at 50% 50%, rgb(231, 232, 233) 0px, rgb(211, 212, 213) 100%);
 	background-origin: padding-box;
 	background-size: auto;
 	border-bottom-left-radius: 3px;
@@ -118,11 +132,9 @@
 	text-align: left;
 	margin: 10px 0px 10px 0px;
 }
-.node-type-grupo-investigaci-n .offer-products .product:hover
-{
-	background: #fbeade;
-}
-.node-type-grupo-investigaci-n .offer-products .product #link
+
+.node-type-grupo-investigaci-n .offer-products .product #link,
+.node-type-producto .related-groups .research-group #link
 {
 	float: right;
 	
@@ -130,7 +142,13 @@
 	height: 19px;
 	background-image: url("../images/BOTON_CIRCULO_FLECHITA-ON.png");
 }
-.node-type-grupo-investigaci-n .contacto
+.node-type-producto .related-groups .research-group #link
+{
+	background-image: url("../images/BOTON_FLECHITA_ROJA-OFF.png");
+	width: 25px;
+}
+.node-type-grupo-investigaci-n .contacto,
+.node-type-producto .contacto
 {
     text-align: center;
     margin-top: 30px;
@@ -141,8 +159,13 @@
     padding: 47px 0px 47px 0px;
 
 }
+.node-type-producto .contacto
+{
+	background-image: url("../images/INCONO_INFORMACION.png");
+}
 
-.node-type-grupo-investigaci-n .contacto>p
+.node-type-grupo-investigaci-n .contacto>p,
+.node-type-producto .contacto > p
 {
 
 	font-family: Arial, Helvetica, sans-serif;
@@ -152,7 +175,8 @@
 	margin-bottom: 22px;
 
 }
-.node-type-grupo-investigaci-n .contacto #textForm
+.node-type-grupo-investigaci-n .contacto #textForm,
+.node-type-producto .contacto #textForm
 {
 	width: 315px;
 	margin: 0px 0px 10px 0px;
@@ -162,17 +186,7 @@
 	border-radius: 4px;
 	border-color: #ccc;
 
-	background-color: rgb(255, 255, 255);
-	
-	color: rgb(228, 117, 22);
-
-	/*border-image-outset: 0px;
-	border-image-repeat: stretch;
-	border-image-slice: 100%;
-	border-image-source: none;
-	border-image-width: 1;*/
-	
-	
+	background-color: rgb(255, 255, 255);	
 	
 	cursor: auto;
 	display: inline-block;
@@ -183,9 +197,6 @@
 	font-style: normal;
 	font-variant: normal;
 	font-weight: normal;
-	
-	/*letter-spacing: normal;
-	line-height: 20px;*/
 
 	outline: none;
 	text-align: start;
@@ -196,38 +207,34 @@
 	word-spacing: 0px;
 	writing-mode: lr-tb;
 	vertical-align: middle;
-
-
 }
 
-.node-type-grupo-investigaci-n .contacto button
+
+.node-type-grupo-investigaci-n .contacto button,
+.node-type-producto .contacto button
 {
-	background-color: #e47516;
+	
 	-webkit-appearance: none;
 	align-items: flex-start;
 	background-attachment: scroll;
 	background-clip: border-box;
-	background-color:  #e47516;
+	
 
 	background-origin: padding-box;
 	background-size: auto;
-	border-bottom-color: rgb(247, 154, 12);
-	border-bottom-style: none;
-	border-bottom-width: 0px;
+	
+
+	
 	border-image-outset: 0px;
 	border-image-repeat: stretch;
 	border-image-slice: 100%;
 	border-image-source: none;
-	border-image-width: 1;
-	border-left-color: rgb(247, 154, 12);
-	border-left-style: none;
-	border-left-width: 0px;
-	border-right-color: rgb(247, 154, 12);
-	border-right-style: none;
-	border-right-width: 0px;
-	border-top-color: rgb(247, 154, 12);
+	border-image-width: 1;	
+	border-style: none;	
+	border-color:rgb(247, 154, 12);
 	border-top-style: none;
-	border-top-width: 0px;
+	border-width: 0px;
+
 	box-sizing: border-box;
 	color: white;
 	cursor: pointer;
@@ -241,15 +248,11 @@
 	height: 41px;
 	letter-spacing: normal;
 	line-height: 20px;
-	margin-bottom: 0px;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 0px;
+	
+	padding: 11px 28px 10px 28px;
+	
+	margin: 0px;
 	min-width: 100px;
-	padding-bottom: 10px;
-	padding-left: 28px;
-	padding-right: 28px;
-	padding-top: 11px;
 	text-align: center;
 	text-decoration: none;
 	text-indent: 0px;
@@ -263,35 +266,8 @@
 	-webkit-writing-mode: horizontal-tb;
 }
 
-.node-type-grupo-investigaci-n .contacto button:hover
+.node-type-grupo-investigaci-n .contacto .checkbox a,
+.node-type-producto .contacto .checkbox a
 {
-	background-color: #F79A0C;
-}
-
-/*
-.node-type-grupo-investigaci-n .contacto #textForm:
-{
-	
-	border-bottom-color: rgb(216, 160, 113);
-
-	border-left-color: rgb(216, 160, 113);
-
-	border-right-color: rgb(216, 160, 113);
-
-	border-top-color: rgb(216, 160, 113);
-	transition-delay: 0s, 0s;
-	transition-duration: 0.2s, 0.2s;
-	transition-property: border, box-shadow;
-	transition-timing-function: linear, linear;
-	
-		-webkit-appearance: none;
-	-webkit-rtl-ordering: logical;
-	-webkit-user-select: text;
-	
-	-webkit-writing-mode: horizontal-tb;
-}*/
-.node-type-grupo-investigaci-n .contacto #textForm:focus
-{
-	border: 1px solid #e47516;
-    box-shadow: 0 1px 1px rgba(0,0,0,.075) inset,0 0 8px rgba(228,117,22,.6);
+	text-decoration: underline;
 }

@@ -79,7 +79,7 @@
  * @ingroup templates
  */
 ?>
-<article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix <?php if($page){ print 'col-lg-6';}?>"<?php print $attributes; ?>>
+<article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix <?php if($page){ print 'col-lg-7';}?>"<?php print $attributes; ?>>
   <?php if ((!$page && !empty($title)) || !empty($title_prefix) || !empty($title_suffix) || $display_submitted): ?>
   <header>
 
@@ -111,17 +111,15 @@
   <?php endif; ?>
   <?php //print render($content['comments']); ?>
 <?php if($page):?>
-  <div class ="col-lg-12">
-  <h1>Grupos</h1>
+  <div class ="col-lg-12 related-groups">
+  <div id="title">
+    <span>Grupos</span>
+  </div>
+  
   <?php
 
         $lan    = $node->language;
-        $nid    = $node->nid;
-        
-        /*$uri    = request_uri();
-        $pos    = strrpos($uri,"/")+1;
-        $idGrp  = substr($uri, $pos);
-    */
+        $nid    = $node->nid;        
         $query  = 
 
           " SELECT *
@@ -145,9 +143,9 @@
         $result=db_query($query);
         foreach ($result as $row) 
         {
-            echo '<div class="research-grpup">
+            echo '<div class="research-group">
                     <span>'.$row->title.'</span>';
-            echo '  <a href="/'.$lan.'/'.drupal_get_path_alias("node/".$row->nid).'">enlace</a>
+            echo '  <a id="link" href="/'.$lan.'/'.drupal_get_path_alias("node/".$row->nid).'"></a>
                   </div>';
         }
         
@@ -156,9 +154,49 @@
 <?php endif;?>
 </article>
 <?php if($page):?>
-<div class="col-lg-6">
-<div class ="col-lg-12"><h1>Video</h1></div>
-  <div class ="col-lg-12"><h1>con</h1></div>
+<div class="col-lg-5">
+
+<div class ="col-lg-12 image">
+<img width="100%" height="auto" src="<?php echo str_replace("public://","/sites/default/files/",$node->field_imagen_producto["und"][0]["uri"]);?>" alt="<?php echo $node->field_imagen_producto["und"][0]["alt"];?>" title"<?php echo $node->field_imagen_producto["und"][0]["title"];?>" >
+<?php //dpm($node->field_imagen_producto); ?>
+</div>
+  <div class ="col-lg-12 contacto">
+    <p><?php echo t("Do you need any further information?");?> </p>
+
+    <form>
+      <fieldset> 
+      <div class="">
+        <input type="text" id="textForm" name="name" placeholder="<?php echo t("Name");?>" required="" >
+      </div>
+      <div class="">
+        <input type="text" id="textForm" name="email" placeholder="Email" required="" >
+      </div>
+      <div class="">
+        <input type="text" id="textForm" name="telephone" placeholder="<?php echo t("Telephone");?>" required="" >
+               
+      </div>
+      <div class="">
+       <input type="text" id="textForm" name="subject" placeholder="<?php echo t("Subject");?>" required="" >
+               
+      </div>
+      <div class="">
+       <textarea type="text" id="textForm" rows="6" name="message" placeholder="<?php echo t("Message");?>" required="" ></textarea>
+               
+      </div>
+      <div class="checkbox">
+        <input id="check_politica" type="checkbox" name="check_politica" required="" class="">
+       
+       <span class="ng-scope"><?php echo t("I accept the ");?><a ui-sref="static.politica" href="#!/static/politica"><?php echo t("privacy policy");?></a></span>
+               
+      </div>
+     <button type="submit" class="btn btn-default "><?php echo t("Send");?></button>
+           
+      </fieldset>
+    </form>
+    
+  </div>
+</div>
+  </div>
 </div>
 
 <?php endif; ?>
