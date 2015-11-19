@@ -1,0 +1,49 @@
+.block:first-child h2.block-title
+{
+	margin-top: 20px;
+}
+.front .main-container>div[class="row"]:nth-child(2)
+{
+	border-top: 1px solid grey;
+	border-bottom: 1px solid grey;
+}
+.front .row section:nth-child(2)
+{
+	border-right:  1px solid grey;
+}
+#language
+{
+	min-height: inherit;
+}
+#block-locale-language h2,
+#block-menu-menu-login h2,
+#block-menu-menu-1- h2
+{
+	display: none;
+}
+#block-locale-language ul
+{
+	list-style: none;
+}
+#block-locale-language ul li
+{
+	float: left;
+	margin-right: 10px;
+}
+header[id="navbar"]
+{
+	min-height: inherit;
+}
+#block-menu-menu-login,
+#block-menu-menu-1- ul li
+{
+	float: left;
+}
+#block-menu-menu-1- ul li
+{
+	border-right: 1px solid grey;
+}
+#block-menu-menu-1- ul li:last-child
+{
+	border-right-style: none;
+}
