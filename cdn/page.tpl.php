@@ -88,7 +88,7 @@
         <a class="name navbar-brand" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><?php print $site_name; ?></a>
     <?php endif; ?>
     <?php if (!empty($site_slogan)): ?>
-      <p class="lead"><?php print $site_slogan; ?></p>
+      <p class="lead"><?php print t($site_slogan); ?></p>
   <?php endif; ?>
   </div>
 <header id="navbar" role="banner" class="<?php print $navbar_classes; ?>">
@@ -141,7 +141,7 @@
         }
         else
         {
-          $content_class="col-lg-7";
+          $content_class="col-lg-7 ";
           $content2_class="col-lg-5";
         }
       ?>
