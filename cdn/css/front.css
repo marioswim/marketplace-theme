@@ -64,7 +64,12 @@
 .front #views-bootstrap-grid-1  .views-field-field-imagen-producto
 {
 	max-width: 58%;
-	
+		
+}
+.front #views-bootstrap-grid-1  .views-field-field-imagen-producto img
+{
+	width: 230px;
+	height: 143px;
 }
 #views-bootstrap-grid-1 .views-field-field-imagen-producto,
 #views-bootstrap-grid-1 .img
@@ -126,7 +131,7 @@
 {	
 	position: absolute;	
 	bottom: 25px;
-	left:378px;
+	left:278px;
 	color: rgb(118, 159, 202);
 	white-space: nowrap;
 	text-overflow:ellipsis;
