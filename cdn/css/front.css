@@ -233,3 +233,144 @@
     font-size: 13px;
     color: #fff;
 }
+.page-research-group #edit-field-area-tid-wrapper
+{
+	float:none;
+	background-color:#454347;
+	border-radius: 5px;
+	padding-right: 0px;
+}
+.page-research-group #edit-field-area-tid-wrapper label[for="edit-field-area-tid"]
+{
+	display: block;
+    margin-left: 25px;
+    font-size: 18px;
+    line-height: 33px;
+    margin-bottom: 0px;
+    color: #fff;
+}
+.page-research-group #edit-field-area-tid-wrapper .bef-select-as-links .form-item >div
+{
+	display: inline-block;
+	border-right: 1px solid #b65928;
+	background-color: #DE7327;
+	width: 11.11%;
+	text-align: center;
+	background-size: cover;
+	background-position-x:50%;
+	
+	height:100px;
+}
+.page-research-group #edit-field-area-tid-wrapper .bef-select-as-links .form-item >div:first-child
+{
+	display: none;
+}
+.page-research-group #edit-field-area-tid-wrapper .bef-select-as-links .form-item >div:hover
+{
+	background-color: #CF6C26;
+
+}
+.page-research-group #edit-field-area-tid-wrapper .bef-select-as-links .form-item >div:last-child
+{
+	border-right: 0px;
+}
+.page-research-group #edit-field-area-tid-wrapper .bef-select-as-links .form-item >div a
+{
+	color:#ffbc71;
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding-top: 65px;
+    text-decoration: none;
+}
+.page-research-group #edit-field-area-tid-wrapper .bef-select-as-links .form-item >div a:hover
+{
+	color:white;
+}
+.page-research-group #edit-field-area-tid-wrapper .bef-select-as-links .form-item >div .active
+{
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+}
+.agr
+{
+	background-image: url("../images/areas/agr.png");
+}
+.bio
+{
+	background-image: url("../images/areas/bio.png");
+}
+.cts
+{
+	background-image: url("../images/areas/cts.png");
+}
+.fqm
+{
+	background-image: url("../images/areas/fqm.png");
+}
+.hum
+{
+	background-image: url("../images/areas/hum.png");
+}
+.rnm
+{
+	background-image: url("../images/areas/rnm.png");
+}
+.sej
+{
+	background-image: url("../images/areas/sej.png");
+}
+.tep
+{
+	background-image: url("../images/areas/tep.png");
+}
+.tic
+{
+	background-image: url("../images/areas/tic.png");
+}
+.agr:hover,
+.agr_active
+{
+	background-image: url("../images/areas/blanco/agr.png");
+}
+.bio:hover,
+.bio_active
+{
+	background-image: url("../images/areas/blanco/bio.png");
+}
+.cts:hover,
+.cts_active
+{
+	background-image: url("../images/areas/blanco/cts.png");
+}
+.fqm:hover,
+.fqm_active
+{
+	background-image: url("../images/areas/blanco/fqm.png");
+}
+.hum:hover,
+.hum_active
+{
+	background-image: url("../images/areas/blanco/hum.png");
+}
+.rnm:hover,
+.rnm_active
+{
+	background-image: url("../images/areas/blanco/rnm.png");
+}
+.sej:hover,
+.sej_active
+{
+	background-image: url("../images/areas/blanco/sej.png");
+}
+.tep:hover,
+.tep_active
+{
+	background-image: url("../images/areas/blanco/tep.png");
+}
+.tic:hover,
+.tic_active
+{
+	background-image: url("../images/areas/blanco/tic.png");
+}

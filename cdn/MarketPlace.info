@@ -31,3 +31,6 @@ stylesheets[all][] = css/node.css
 stylesheets[all][] = css/color.css
 stylesheets[all][] = css/common.css
 stylesheets[all][] = css/front.css
+
+
+scripts[] = 'js/script.js'
