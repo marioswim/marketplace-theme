@@ -31,8 +31,25 @@
 	float: left;
 	margin-right: 10px;
 }
+#block-locale-language ul .active
+{
+	color:black;
+}
+#uja
+{
+	background-image: url("../images/CABECERA.png");
+	height: 158px;	
+	background-size: 96%;
+	background-repeat: no-repeat;
+	background-position-x:50%;
+}
+#Logos
+{
+	display: none;
+}
 header[id="navbar"]
 {
+	margin-top: 0px!important;
 	min-height: inherit;
 }
 #block-menu-menu-login
