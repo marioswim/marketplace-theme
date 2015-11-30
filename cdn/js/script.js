@@ -1,13 +1,15 @@
 (function($) {
 	$(document).ready(function(){	
 		
-		ResearchAreaImage($);
-		ResearchAreaImageActive($);
+		ResearchArea($);
+		ResearchAreaActive($);
+		ProductSector($);
+		ProductSectorActive($);
 	});	
 
 })(jQuery);
 
-function ResearchAreaImage($)
+function ResearchArea($)
 {
 	var areas=["","agr","bio","cts","fqm","hum","rnm","sej","tep","tic"];
 	var count=0;
@@ -17,20 +19,47 @@ function ResearchAreaImage($)
 		count++;
 	});	
 }
-function ResearchAreaImageActive($)
+function ResearchAreaActive($)
 {
 	var areas=["","agr_active","bio_active","cts_active","fqm_active","hum_active","rnm_active","sej_active","tep_active","tic_active"];
-	$(".page-research-group #edit-field-area-tid-wrapper .bef-select-as-links .form-item >div a").on("click",function()
-	{
-		var pos=$(this).parent().index();
-		var count=0;
-
-		$(this).parent().parent().children("div").each(function() 
-		{
-			$(this).removeClass(areas[count]);
-			count++;
-		});
-		$(this).parent().addClass(areas[pos]);
-	});
+	$(".page-research-group #edit-field-area-tid-wrapper .bef-select-as-links .form-item >div a").on("click",function(){
+		cssActiveImages(areas,$(this),$);
+	}
+	);
 	
+}
+function ProductSector($)
+{
+	var areas=["","AGR","BIOySAl","ENE","GSE","HUMyED","INF","MAT","PIND","ICT","TPC"];
+	var count=0;
+	$("#edit-field-sector-productivo-tid-wrapper .bef-select-as-links .form-item >div ").each(function()
+	{
+		$(this).addClass(areas[count]);
+		count++;
+	});	
+}
+function ProductSectorActive($)
+{
+	var areas=["","AGR_active","BIOySAl_active","ENE_active","GSE_active","HUMyED_active","INF_active","MAT_active","PIND_active","ICT_active","TPC_active"];
+	$("#edit-field-sector-productivo-tid-wrapper .bef-select-as-links .form-item > div a.active").addClass(function()
+	{
+		cssActiveImages(areas,$(this),$);
+	});
+	$("#edit-field-sector-productivo-tid-wrapper .bef-select-as-links .form-item > div a").on("click",function()
+	{
+		cssActiveImages(areas,$(this),$);
+	});
+}
+
+function cssActiveImages(areas,a,$)
+{
+	var pos=a.parent().index();
+	var count=0;
+
+	a.parent().parent().children("div").each(function() 
+	{
+		$(this).removeClass(areas[count]);
+		count++;
+	});
+	a.parent().addClass(areas[pos]);
 }

@@ -1,3 +1,15 @@
 /**
  * Place your custom styles here.
  */
+#block-views-carousel-block .block-title
+{
+	display: none;
+}
+#block-views-carousel-block #views-bootstrap-carousel-1
+{
+	height: 	253px;
+	display: block;
+	margin-top: 15px;
+	margin-bottom: 18px;
+
+}

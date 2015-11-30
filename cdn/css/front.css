@@ -233,6 +233,7 @@
     font-size: 13px;
     color: #fff;
 }
+#edit-field-sector-productivo-tid-wrapper,
 .page-research-group #edit-field-area-tid-wrapper
 {
 	float:none;
@@ -240,6 +241,7 @@
 	border-radius: 5px;
 	padding-right: 0px;
 }
+#edit-field-sector-productivo-tid-wrapper label,
 .page-research-group #edit-field-area-tid-wrapper label[for="edit-field-area-tid"]
 {
 	display: block;
@@ -249,44 +251,77 @@
     margin-bottom: 0px;
     color: #fff;
 }
+#edit-field-sector-productivo-tid-wrapper .bef-select-as-links .form-item >div,
 .page-research-group #edit-field-area-tid-wrapper .bef-select-as-links .form-item >div
 {
-	display: inline-block;
-	border-right: 1px solid #b65928;
-	background-color: #DE7327;
-	width: 11.11%;
+	display: inline-block;	
 	text-align: center;
 	background-size: cover;
-	background-position-x:50%;
+	background-position-x:50%;	
+	vertical-align: middle;
 	
+}
+.page-research-group #edit-field-area-tid-wrapper .bef-select-as-links .form-item >div
+{
+	width: 11.11%;
+	border-right: 1px solid #b65928;
+	background-color: #DE7327;
 	height:100px;
 }
+#edit-field-sector-productivo-tid-wrapper .bef-select-as-links .form-item >div
+{
+	width: 10%;
+	border-right: 1px solid #1E5795;
+	background-color: #3A74B1;
+	height:150px;
+}
+#edit-field-sector-productivo-tid-wrapper .bef-select-as-links .form-item >div:first-child,
 .page-research-group #edit-field-area-tid-wrapper .bef-select-as-links .form-item >div:first-child
 {
 	display: none;
 }
+
 .page-research-group #edit-field-area-tid-wrapper .bef-select-as-links .form-item >div:hover
 {
 	background-color: #CF6C26;
 
 }
+#edit-field-sector-productivo-tid-wrapper .bef-select-as-links .form-item >div:hover
+{
+	background-color:#32679D;
+}
+#edit-field-sector-productivo-tid-wrapper .bef-select-as-links .form-item >div:last-child,
 .page-research-group #edit-field-area-tid-wrapper .bef-select-as-links .form-item >div:last-child
 {
 	border-right: 0px;
 }
+#edit-field-sector-productivo-tid-wrapper .bef-select-as-links .form-item >div a,
+.page-research-group #edit-field-area-tid-wrapper .bef-select-as-links .form-item >div a
+{
+	width: 100%;
+	display: block;
+	height: 100%;
+    text-decoration: none;
+}
+#edit-field-sector-productivo-tid-wrapper .bef-select-as-links .form-item >div a
+{
+	color:#87B5F7;
+	padding-left: 5px;
+	padding-right: 5px;
+	font-size: 12.5px;
+	padding-top: 80px;
+}
 .page-research-group #edit-field-area-tid-wrapper .bef-select-as-links .form-item >div a
 {
 	color:#ffbc71;
-	display: block;
-	width: 100%;
-	height: 100%;
 	padding-top: 65px;
-    text-decoration: none;
 }
+#edit-field-sector-productivo-tid-wrapper .bef-select-as-links .form-item >div a:hover,
 .page-research-group #edit-field-area-tid-wrapper .bef-select-as-links .form-item >div a:hover
 {
 	color:white;
 }
+#edit-field-sector-productivo-tid-wrapper .bef-select-as-links .form-item >div .active,
 .page-research-group #edit-field-area-tid-wrapper .bef-select-as-links .form-item >div .active
 {
 	color: white;
@@ -373,4 +408,94 @@
 .tic_active
 {
 	background-image: url("../images/areas/blanco/tic.png");
+}
+.AGR
+{
+	background-image: url("../images/prodSec/agr.png");
+}
+.BIOySAl
+{
+	background-image: url("../images/prodSec/bio.png");
+}
+.ENE
+{
+	background-image: url("../images/prodSec/ene.png");
+}
+.GSE
+{
+	background-image: url("../images/prodSec/emp.png");
+}
+.HUMyED
+{
+	background-image: url("../images/prodSec/hum.png");
+}
+.INF
+{
+	background-image: url("../images/prodSec/inf.png");
+}
+.MAT
+{
+	background-image: url("../images/prodSec/mat.png");
+}
+.PIND
+{
+	background-image: url("../images/prodSec/ind.png");
+}
+.ICT
+{
+	background-image: url("../images/prodSec/tic.png");
+}
+.TPC
+{
+	background-image: url("../images/prodSec/tur.png");
+}
+.AGR_active,
+.AGR:hover
+{
+	background-image: url("../images/prodSec/blanco/agr.png");
+}
+.BIOySAl_active,
+.BIOySAl:hover
+{
+	background-image: url("../images/prodSec/blanco/bio.png");
+}
+.ENE_active,
+.ENE:hover
+{
+	background-image: url("../images/prodSec/blanco/ene.png");
+}
+.GSE_active,
+.GSE:hover
+{
+	background-image: url("../images/prodSec/blanco/emp.png");
+}
+.HUMyED_active,
+.HUMyED:hover
+{
+	background-image: url("../images/prodSec/blanco/hum.png");
+}
+.INF_active,
+.INF:hover
+{
+	background-image: url("../images/prodSec/blanco/inf.png");
+}
+.MAT_active,
+.MAT:hover
+{
+	background-image: url("../images/prodSec/blanco/mat.png");
+}
+.PIND_active,
+.PIND:hover
+{
+	background-image: url("../images/prodSec/blanco/ind.png");
+}
+.ICT_active,
+.ICT:hover
+{
+	background-image: url("../images/prodSec/blanco/tic.png");
+}
+.TPC_active,
+.TPC:hover
+{
+	background-image: url("../images/prodSec/blanco/tur.png");
 }
