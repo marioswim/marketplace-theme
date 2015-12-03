@@ -1,0 +1,212 @@
+#views-bootstrap-grid-1
+{
+	margin-right: 10px;
+}
+#views-bootstrap-grid-1  .col
+{
+	margin-left: 15px;
+	background-color: #DADBDC;
+	min-height: 172px;
+	padding: 0px;	
+}
+#views-bootstrap-grid-1 .views-field-field-imagen-producto,
+#views-bootstrap-grid-1 .img
+{
+	float: left;
+	background-color: #a0b9d3;
+	border-radius: 3px;
+	padding: 14.5px 15px 14.5px 15px;
+
+}
+#views-bootstrap-grid-1 .views-field-field-imagen-producto,
+#views-bootstrap-grid-1 .img
+{
+    border: 1px solid #769fca;
+    margin-right: 15px;
+}
+#views-bootstrap-grid-1 .img img
+{
+	float: left;
+	width: 145px;
+	height: 142px;
+
+}
+
+#views-bootstrap-grid-1 .info
+{
+	
+	min-height: 173px;
+	margin-left: auto;
+	padding: 18px 20px 18px 20px;
+}
+
+#views-bootstrap-grid-1 .info .title
+{
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+
+	font-weight: 700;
+}
+#views-bootstrap-grid-1 .info .title a
+{
+		color: #000!important;
+		font-family: Arial, Helvetica, sans-serif;
+
+}
+#views-bootstrap-grid-1 .info .description,
+#views-bootstrap-grid-1 .info .description p
+{
+	overflow: hidden;
+	max-height: 115px;	
+	color: rgb(92, 91, 96);
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 17px;
+	text-align: justify;
+}
+#views-bootstrap-grid-1 .info .groups
+{	
+	position: absolute;	
+	bottom: 25px;
+	left:278px;
+	color: rgb(118, 159, 202);
+	white-space: nowrap;
+	text-overflow:ellipsis;
+	overflow: hidden;
+	font-size: 11px;
+	width: 241px;
+	text-transform: uppercase;
+}
+#views-bootstrap-grid-1 .info .groups b
+{
+	color: #08c;
+	font-weight: normal;
+	font-family: Lato, sans-serif;
+	
+}
+.page-list-products .col,
+.page-research-group .col
+{
+	margin-top: 20px;
+}
+@media(max-width: 768px){
+
+
+	.page-list-products .col-lg-6,
+	.page-research-group .col-lg-6
+	{
+		width: 100%;
+
+	}
+}
+@media(min-width: 768px){
+
+
+}
+@media(min-width: 992px){
+
+
+}
+@media(min-width: 1200px){
+	.page-list-products .col-lg-6,
+	.page-research-group .col-lg-6
+	{
+		width: 48.5%;
+	}
+
+}
+
+.page-research-group .page-header
+{
+	margin-bottom: 5px;
+}
+.page-research-group .page-header span
+{
+	display: none;
+}
+
+.page-research-group #edit-populate-wrapper
+{
+	margin-top: 28px;
+	width: 100%;
+	padding: 22px 19px;
+    display: block;
+    height: 157px;
+    background-image: url("../images/FONDO_BUSQUEDA_GRUPOS.png");
+    background-size: cover;
+}
+.page-research-group #edit-populate-wrapper label
+{
+	font-size: 23px;
+	color:white;
+	font-weight: normal;
+}
+.page-research-group #edit-populate-wrapper input
+{
+	width: 500px;
+	height: 50px;
+	font-size: 18px;
+	font-weight: 700;
+	color: #3b75b3;
+	display: inline-block;
+
+}
+.page-research-group #edit-populate-wrapper input:before
+{
+	content: "sfsafadf";
+}
+/*
+#views-bootstrap-grid-1 .info .groups b:hover
+{
+	color:rgb(0, 85, 128);
+}*/
+#views-bootstrap-grid-2
+{
+	margin-right: 10px;
+}
+#views-bootstrap-grid-2 .row 
+{
+	margin-top: 15px;
+	margin-left: 0px;
+	margin-right: 0px;
+
+	width: 100%;
+}
+#views-bootstrap-grid-2 .col
+{
+	padding: 0px;
+}
+#views-bootstrap-grid-2 .video
+{
+	width: 100%;
+	height: 172px;
+}
+#views-bootstrap-grid-2 .video iframe
+{
+	width: 100%;
+	height: 172px;
+}
+#views-bootstrap-grid-2 .info
+{
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+	padding: 8px 25px 8px 25px;
+	background: 	none repeat scroll 0 0 rgba(0,0,0,.7);
+
+}
+
+#views-bootstrap-grid-2 .info .grupo
+{
+	    font-size: 11px;
+    font-weight: 700;
+    color: #aeafb1;
+}
+#views-bootstrap-grid-2 .info .title
+{
+	    display: block;
+    overflow: hidden;
+    font-size: 13px;
+    color: #fff;
+}

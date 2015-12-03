@@ -31,6 +31,8 @@ stylesheets[all][] = css/node.css
 stylesheets[all][] = css/color.css
 stylesheets[all][] = css/common.css
 stylesheets[all][] = css/front.css
+stylesheets[all][] = css/views.css
+stylesheets[all][] = css/menus.css
 
 
 scripts[] = 'js/script.js'
