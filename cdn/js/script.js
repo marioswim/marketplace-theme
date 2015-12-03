@@ -5,13 +5,14 @@
 		ResearchAreaActive($);
 		ProductSector($);
 		ProductSectorActive($);
+		placeHolder($);
 	});	
 
 })(jQuery);
 
 function ResearchArea($)
 {
-	var areas=["","agr","bio","cts","fqm","hum","rnm","sej","tep","tic"];
+	var areas=["any","agr","bio","cts","fqm","hum","rnm","sej","tep","tic"];
 	var count=0;
 	$(".page-research-group #edit-field-area-tid-wrapper .bef-select-as-links .form-item >div").each(function()
 	{
@@ -62,4 +63,22 @@ function cssActiveImages(areas,a,$)
 		count++;
 	});
 	a.parent().addClass(areas[pos]);
+}
+
+function placeHolder($)
+{
+	var path=window.location.pathname;
+
+	var splitPath=path.split("/");
+
+	switch(splitPath[1])
+	{	
+	case "es":
+		$(".page-research-group #edit-populate-wrapper input").attr("placeholder","Buscar");
+
+		break;
+	case "en":
+		$(".page-research-group #edit-populate-wrapper input").attr("placeholder","Search");
+		break;
+	}
 }
