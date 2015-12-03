@@ -1,15 +1,89 @@
 /**
  * Place your custom styles here.
  */
+ #edit-actions
+ {
+ 	margin: 0px;
+ }
 #block-views-carousel-block .block-title
 {
 	display: none;
 }
 #block-views-carousel-block #views-bootstrap-carousel-1
 {
-	height: 	253px;
+	max-height: 253px;
 	display: block;
-	margin-top: 15px;
 	margin-bottom: 18px;
+}
+
+#block-views-carousel-block #views-bootstrap-carousel-1 .item-carrousel
+{
+	position: absolute;
+	bottom:0px;
+	left:0px;	
+	background-color: rgba(255,255,255,0.8);
+}
+#block-views-carousel-block #views-bootstrap-carousel-1 .item-carrousel .title
+{
+	color:#3b75b3;
+	padding: 5px 44px;
+    font-size: 16px;
+    font-family: Lato,sans-serif;
+    font-weight: bolder;
+}
+#block-views-carousel-block #views-bootstrap-carousel-1 .carousel-indicators
+{
+
+	left: 50%;
+	top: 0px;
+	width: inherit;
+	background-color: transparent;
+	margin: 0px;
+}
+#block-views-carousel-block #views-bootstrap-carousel-1 .carousel-control
+{
+	background:transparent;
+	width: 20px;
+}
+#block-views-carousel-block #views-bootstrap-carousel-1 .carousel-control span
+{
+	margin:0px;
+
+}
+#block-views-carousel-block #views-bootstrap-carousel-1 .icon-prev
+{
+	margin-left: 15px;
+	content: url("../images/carousel/izq.png");
+}
+#block-views-carousel-block #views-bootstrap-carousel-1 .icon-next
+{
+	margin-right: 15px;
+	content: url("../images/carousel/der.png");
+}
+@media(max-width: 768px){
+
+	#block-views-carousel-block #views-bootstrap-carousel-1 .carousel-control span
+	{
+		display: none;
+	}
+}
+@media(min-width: 768px){
+
+	#block-views-carousel-block #views-bootstrap-carousel-1 .carousel-control span
+	{
+		width: 20px;
+		height: 20px;
+	}
+
+}
+@media(min-width: 992px){
+
+	#block-views-carousel-block #views-bootstrap-carousel-1 .carousel-control span
+	{
+		width: 40px;
+		height: 40px;
+	}
+}
+@media(min-width: 1200px){
 
 }
