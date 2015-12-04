@@ -210,3 +210,34 @@
     font-size: 13px;
     color: #fff;
 }
+
+#tooltip
+{
+	display: none;
+}
+
+.info .title a:hover #tooltip
+{
+	display: block;
+	white-space: normal;
+	width: 300px;
+	text-decoration: none;
+	background-color: #454347;
+	padding: 10px;
+	border-radius: 5px;
+	color:white;
+	position: absolute;
+	bottom: 100%;
+
+}
+.info .title a:hover #tooltip:before
+{
+	
+    content: "";
+    position: absolute;
+    z-index: 99;
+    border:1px solid #454347;
+    border-width: 16px 16px 0 16px;
+    bottom: -16px;
+    border-color:#454347 transparent;
+}
