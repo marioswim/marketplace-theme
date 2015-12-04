@@ -6,6 +6,7 @@
 		ProductSector($);
 		ProductSectorActive($);
 		placeHolder($);
+		//printPage($);
 	});	
 
 })(jQuery);
@@ -75,10 +76,20 @@ function placeHolder($)
 	{	
 	case "es":
 		$(".page-research-group #edit-populate-wrapper input").attr("placeholder","Buscar");
+		$(".page-list-products #edit-populate-wrapper input").attr("placeholder","Buscar");
 
 		break;
 	case "en":
 		$(".page-research-group #edit-populate-wrapper input").attr("placeholder","Search");
+		$(".page-list-products #edit-populate-wrapper input").attr("placeholder","Search");
 		break;
 	}
+}
+
+function printPage($)
+{
+	$("#imprimir").on("click",function()
+	{
+		$(".row").printArea();
+	});
 }
