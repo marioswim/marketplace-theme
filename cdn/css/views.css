@@ -116,16 +116,17 @@
 	}
 
 }
-
+.page-list-products .page-header,
 .page-research-group .page-header
 {
 	margin-bottom: 5px;
 }
+.page-list-products .page-header span,
 .page-research-group .page-header span
 {
 	display: none;
 }
-
+.page-list-products #edit-populate-wrapper,
 .page-research-group #edit-populate-wrapper
 {
 	margin-top: 28px;
@@ -133,15 +134,23 @@
 	padding: 22px 19px;
     display: block;
     height: 157px;
-    background-image: url("../images/FONDO_BUSQUEDA_GRUPOS.png");
     background-size: cover;
 }
+.page-list-products #edit-populate-wrapper
+{
+	 background-image: url("../images/FONDO_BUSQUEDA_PRODUCTOS.png");
+}
+.page-research-group #edit-populate-wrapper
+{
+	 background-image: url("../images/FONDO_BUSQUEDA_GRUPOS.png");
+}
+.page-list-products #edit-populate-wrapper label,
 .page-research-group #edit-populate-wrapper label
 {
 	font-size: 23px;
 	color:white;
 	font-weight: normal;
-}
+}.page-list-products #edit-populate-wrapper input,
 .page-research-group #edit-populate-wrapper input
 {
 	width: 500px;
@@ -151,10 +160,6 @@
 	color: #3b75b3;
 	display: inline-block;
 
-}
-.page-research-group #edit-populate-wrapper input:before
-{
-	content: "sfsafadf";
 }
 /*
 #views-bootstrap-grid-1 .info .groups b:hover
