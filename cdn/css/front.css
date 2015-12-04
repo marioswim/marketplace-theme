@@ -6,7 +6,10 @@
 {
 	padding-left: 0px;
 }
-
+.front #edit-populate-wrapper
+{
+	display: none;
+}
 #block-views-productos-block-1 .block-title,
 #block-views-research-group-block-1 .block-title
 {
