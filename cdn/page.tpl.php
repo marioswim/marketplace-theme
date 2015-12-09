@@ -128,8 +128,6 @@
 <div class="main-container <?php print $container_class; ?>">
 
   <header role="banner" id="page-header">
-    
-
     <?php print render($page['header']); ?>
   </header> <!-- /#page-header -->
 
@@ -139,7 +137,14 @@
       <a id="main-content"></a>
       <?php print render($title_prefix); ?>
       <?php if (!empty($title)): ?>
-        <h1 class="page-header"><?php print $title; ?></h1>
+        <h1 class="page-header">
+          <?php print $title; ?>
+        </h1>
+      <?php endif; ?>
+      <?php if(!empty($page["printIcon"])): ?>
+        <div id="imprimir">
+          <?php print render($page["printIcon"]); ?>
+        </div>
       <?php endif; ?>
       <?php print render($title_suffix); ?>
       <?php print $messages; ?>

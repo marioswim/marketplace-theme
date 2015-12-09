@@ -11,7 +11,7 @@ base theme = bootstrap
 regions[language]   	= 'Language'
 regions[navigation]     = 'Navigation'
 regions[header]         = 'Top Bar'
-
+regions[printIcon]      = 'Print Icon'
 regions[content]        = 'Content'
 regions[content2]  		= 'Content 2'
 regions[partner]        = 'Partner'
