@@ -149,8 +149,13 @@
 }
 .node-type-producto .related-groups .research-group #link
 {
+	float:none;
+	display: block;
+	
 	background-image: url("../images/BOTON_FLECHITA_ROJA-OFF.png");
-	width: 25px;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position-x: 100%; 
 }
 .node-type-grupo-investigaci-n .contacto,
 .node-type-producto .contacto
@@ -282,4 +287,8 @@
 	color:#818084;
 	text-transform: uppercase;
 	margin-left: 15px;
+}
+.node-type-producto .related-groups .research-group #description
+{
+	font-weight: normal;
 }

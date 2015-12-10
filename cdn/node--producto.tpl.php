@@ -122,10 +122,13 @@
         $nid    = $node->nid;        
         $query  = 
 
-          " SELECT *
+          " SELECT n.title,n.nid, b.body_value
             FROM  node n,
-                  field_data_field_id_grupo i
+                  field_data_field_id_grupo i,
+                  field_data_body b
             WHERE n.nid = i.entity_id 
+                  AND
+                  n.nid=b.entity_id
                   AND
                   i.field_id_grupo_tid in (
 
@@ -151,6 +154,7 @@
                     $id=$aux[$leng];
                     
               echo '<span id="idGrp"> '.$id.'</span>';
+              echo '<div id="description">'.substr($row->body_value,0,200).'...</div>';
             echo '  <a id="link" href="/'.$lan.'/'.drupal_get_path_alias("node/".$row->nid).'"></a>
                   </div>';
         }
