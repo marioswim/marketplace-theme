@@ -161,7 +161,7 @@
 <div class ="col-lg-12">
   
   <?php
-    if($node->field_video["und"][0]["value"]!="")
+    if(!empty($node->field_video))
       echo '<iframe width="100%" height="280px" src="https://www.youtube.com/embed/'.$node->field_video["und"][0]["value"].'" frameborder="0" allowfullscreen></iframe>'
   ?>
   </div>
