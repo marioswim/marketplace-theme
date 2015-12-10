@@ -2,6 +2,8 @@
 .node-type-producto .page-header
 {
 	border-bottom: 0px;
+	margin-bottom: 5px;
+	padding-bottom: 0px;
 
 }
 .node-type-grupo-investigaci-n .field-name-body ,
@@ -273,4 +275,11 @@
 .node-type-producto .contacto .checkbox a
 {
 	text-decoration: underline;
+}
+
+.node-type-producto .related-groups .research-group #idGrp
+{
+	color:#818084;
+	text-transform: uppercase;
+	margin-left: 15px;
 }

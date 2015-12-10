@@ -145,6 +145,12 @@
         {
             echo '<div class="research-group">
                     <span>'.$row->title.'</span>';
+                    $aux=drupal_get_path_alias("node/".$row->nid);
+                    $aux=explode("/", $aux);
+                    $leng=count($aux)-1;
+                    $id=$aux[$leng];
+                    
+              echo '<span id="idGrp"> '.$id.'</span>';
             echo '  <a id="link" href="/'.$lan.'/'.drupal_get_path_alias("node/".$row->nid).'"></a>
                   </div>';
         }
