@@ -5,64 +5,11 @@
 .node-type-grupo-investigaci-n .field-name-field-email .field-items,
 .node-type-grupo-investigaci-n .field-name-field-telefono .field-items,
 .node-type-grupo-investigaci-n .field-name-field-direcci-n .field-items,
-.node-type-grupo-investigaci-n .field-name-field-web .field-items,
-.node-type-grupo-investigaci-n .contacto>p,
-.node-type-grupo-investigaci-n .contacto .checkbox span,
-.node-type-grupo-investigaci-n .contacto .checkbox span a
+.node-type-grupo-investigaci-n .field-name-field-web .field-items
 {
 	color:#e47516;
 }
-.node-type-grupo-investigaci-n .offer-products #title
-{
-	border-bottom: 1px solid #e47516;
-}
-.node-type-grupo-investigaci-n .offer-products #title>span
-{
-	background-image: linear-gradient(rgb(228, 117, 22) 0px, rgb(196, 100, 19) 100%);
-	color: rgb(247, 213, 188);
-}
-.node-type-producto .related-groups #title
-{
-	border-bottom: 1px solid #3b7bb3;
-}
-.node-type-producto .related-groups #title > span
-{
-	background-image: linear-gradient(rgb(59, 123, 179) 0px, rgb(51, 100, 153) 100%);
-	color:#c4d5e8;
-}
-.node-type-grupo-investigaci-n .offer-products .product
-{
-	background-image: radial-gradient(at 50% 50%, rgb(231, 232, 233) 0px, rgb(211, 212, 213) 100%);
-}
-.node-type-producto .related-groups .research-group
-{
-	background-image: radial-gradient(at 50% 50%, rgb(231, 232, 233) 0px, rgb(211, 212, 213) 100%);
-}
-.node-type-grupo-investigaci-n .offer-products .product:hover
-{
-	background: #fbeade;
-}
-.node-type-producto .related-groups .research-group:hover
-{
-	background:radial-gradient(ellipse at center,#e2eaf4 0,#d7e2f0 100%);
-}
-.node-type-grupo-investigaci-n .contacto
-{
-	background-color: #fbeade;
-}
-.node-type-grupo-investigaci-n .contacto #textForm
-{
-	color: rgb(228, 117, 22);
-}
-.node-type-grupo-investigaci-n .contacto #textForm:focus
-{
-	border: 1px solid #e47516;
-    box-shadow: 0 1px 1px rgba(0,0,0,.075) inset,0 0 8px rgba(228,117,22,.6);
-}
-.node-type-producto .contacto
-{
-	background-color: #e2eaf4;
-}
+
 .node-type-producto .page-header,
 .node-type-producto .field-name-body .field-items,
 .node-type-producto .field-name-field-estado .field-items,
@@ -70,38 +17,7 @@
 .node-type-producto .field-name-field-contacto .field-items,
 .node-type-producto .field-name-field-email .field-items,
 .node-type-producto .field-name-field-telefono .field-items,
-.node-type-producto .field-name-field-direcci-n .field-items,
-.node-type-producto .contacto>p,
-.node-type-producto .contacto .checkbox span,
-.node-type-producto .contacto .checkbox span a
-.node-type-producto .contacto >p,
-.node-type-producto .contacto .checkbox span,
-.node-type-producto .contacto .checkbox span a
+.node-type-producto .field-name-field-direcci-n .field-items
 {
 	color:#3b75b3
-}
-.node-type-producto .contacto #textForm
-{
-	color:rgb(59, 117, 179);
-}
-.node-type-producto .contacto #textForm:focus
-{
-	border:1px solid rgba(82, 168, 236, 0.8);
-	box-shadow: rgba(0, 0, 0, 0.0745098) 0px 1px 1px 0px inset, rgba(82, 168, 236, 0.6) 0px 0px 8px 0px;
-}
-.node-type-grupo-investigaci-n .contacto button
-{
-	background-color:  #e47516;
-}
-.node-type-grupo-investigaci-n .contacto button:hover
-{
-	background-color: #F79A0C;
-}
-.node-type-producto .contacto button
-{
-	background-color: #386EA9;
-}
-.node-type-producto .contacto button:hover
-{
-	background-color: #548DCC;
 }

@@ -88,8 +88,8 @@ function placeHolder($)
 
 function printPage($)
 {
-	$("#imprimir").on("click",function()
+/*	$("#imprimir").on("click",function()
 	{
 		$(".row").printArea();
-	});
+	});*/
 }
