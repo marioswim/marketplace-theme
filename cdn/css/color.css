@@ -17,7 +17,8 @@
 .node-type-producto .field-name-field-contacto .field-items,
 .node-type-producto .field-name-field-email .field-items,
 .node-type-producto .field-name-field-telefono .field-items,
-.node-type-producto .field-name-field-direcci-n .field-items
+.node-type-producto .field-name-field-direcci-n .field-items,
+.node-type-producto .field-name-field-sector-productivo .field-items
 {
 	color:#3b75b3
 }

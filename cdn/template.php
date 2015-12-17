@@ -18,29 +18,55 @@ function MarketPlace_field($variables)
 {
 	//dpm($variables);
 	$output='';
-	$output.='<div class="'.$variables["classes"].'">';
+	switch ($variables["element"]["#title"]) {
+		case 'Sector Productivo':
 
-		 if(!empty($variables["label"]))
-			$output.='<div class="field-label">'.$variables["label"].'</div>';
-		
+			$output.='<div class="'.$variables["classes"].'">';
 
-		$output.='<div class="field-items">';
-			$output.='<div class="field-item">';
-
-				 $output.=$variables["items"][0]["#markup"]; 
+				 if(!empty($variables["label"]))
+					$output.='<div class="field-label">'.$variables["label"].'</div>';
 				
+
+				$output.='<div class="field-items">';
+					$output.='<div class="field-item">';
+						$aux="";
+						for($i=0;$i<count($variables["items"]);$i++)
+						{
+							$aux.='<p>'.$variables["items"][$i]["#markup"].'</p>';							
+						}
+						$output.=$aux; 
+					$output.='</div>';
+				$output.='</div>';
 			$output.='</div>';
+
+			break;
+		
+		default:
 			
-		$output.='</div>';
-	$output.='</div>';
+			$output.='<div class="'.$variables["classes"].'">';
+
+				 if(!empty($variables["label"]))
+					$output.='<div class="field-label">'.$variables["label"].'</div>';
+				
+
+				$output.='<div class="field-items">';
+					$output.='<div class="field-item">';
+						 $output.=$variables["items"][0]["#markup"]; 
+					$output.='</div>';
+				$output.='</div>';
+			$output.='</div>';
+			break;
+	}
+	
 	
 	return $output;
 }
 
 function MarketPlace_breadcrumb($variables)
 {
-	dpm($variables);
-	$breadcrumb='
+	if(!empty($variables["breadcrumb"]))
+	{
+		$breadcrumb='
 		<ol class="breadcrumb">
 			<li>'.$variables["breadcrumb"][0].'</li>';
 	$node=menu_get_object();
@@ -93,8 +119,15 @@ function MarketPlace_breadcrumb($variables)
  			break;
 	} 
 
-	$breadcrumb.="</ol>";
-	return $breadcrumb;
+		$breadcrumb.="</ol>";
+		return $breadcrumb;
+
+	}
+	else
+	{
+		return;
+	}
+	
 }
 
 /*
