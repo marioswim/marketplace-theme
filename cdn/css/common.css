@@ -87,3 +87,25 @@ header[id="navbar"] ul  li a.active
 	color:#3b75b3 !important;
 	background: linear-gradient(to bottom,#e9eaeb 0,#cfd1d3 100%);
 }
+.footer
+	{
+		min-height: 315px;
+		padding: 0px;
+		border:0px;
+	    background-image: url("../images/partner.png");
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    background-position: 50%;
+	}
+@media(min-width: 951px){
+	.footer
+	{
+		 background-size: cover;
+	}
+}
+@media(max-width: 950px){
+	.footer
+	{
+		background-size: contain;
+	}
+}
