@@ -11,6 +11,7 @@
 }
 
 .node-type-producto .page-header,
+.node-type-patente 	.page-header,
 .node-type-producto .field-name-body .field-items,
 .node-type-producto .field-name-field-estado .field-items,
 .node-type-producto .field-name-field-inventores .field-items,
@@ -18,7 +19,16 @@
 .node-type-producto .field-name-field-email .field-items,
 .node-type-producto .field-name-field-telefono .field-items,
 .node-type-producto .field-name-field-direcci-n .field-items,
-.node-type-producto .field-name-field-sector-productivo .field-items
+.node-type-producto .field-name-field-sector-productivo .field-items,
+.node-type-producto .field-name-field-keywords .field-items,
+.node-type-patente .field-name-body  .field-items,
+.node-type-patente .field-name-field-sector-productivo .field-items,
+.node-type-patente .field-name-field-contacto  .field-items,
+.node-type-patente .field-name-field-email .field-items,
+.node-type-patente .field-name-field-inventores .field-items,
+.node-type-patente .field-name-field-ventajas-y-aspectos-innova .field-items,
+.node-type-patente .field-name-field-keywords .field-items,
+.node-type-patente .field-name-field-estado-de-la-patente .field-items
 {
 	color:#3b75b3
 }
