@@ -9,16 +9,13 @@
 	padding-top: 15px;
 	padding-bottom: 15px;
 }
-.front .row section:nth-child(2)
-{
-	border-right:  1px solid #d8dadc;
-}
 #language
 {
 	min-height: inherit;
 }
 #block-locale-language h2,
-#block-menu-menu-login h2
+#block-menu-menu-login h2,
+#block-menu-menu-perfil-y-logout .block-title
 {
 	display: none;
 }
@@ -34,14 +31,6 @@
 #block-locale-language ul .active
 {
 	color:black;
-}
-#uja
-{
-	background-image: url("../images/CABECERA.png");
-	height: 158px;	
-	background-size: 96%;
-	background-repeat: no-repeat;
-	background-position-x:50%;
 }
 #Logos
 {
@@ -87,25 +76,225 @@ header[id="navbar"] ul  li a.active
 	color:#3b75b3 !important;
 	background: linear-gradient(to bottom,#e9eaeb 0,#cfd1d3 100%);
 }
-.footer
+#uja a:hover 
+{
+	text-decoration: none;
+}
+#uja a:hover p:nth-child(2n+1)
+{
+	color: #284B71;
+}
+#uja #text,
+#footer #text
+{
+	display: inline-block;
+	float: left;
+	width: 80%;
+	margin-top: 20px;
+}
+#uja #ujaen,
+#footer #ujaen
+{
+	display: inline-block;
+	width: 20%;
+	margin-top: 20px;
+}
+#uja #text p
+{
+	line-height: 100%;
+}
+#footer
+{
+
+	padding: 10px 0px 0px 0px;
+	border:0px;
+    background-color: #323033;
+    margin-top: 15px;
+}
+#footer p
+{
+	margin-left: 45px;
+	margin-bottom: 0px;
+
+}
+#uja p:first-child,
+#footer p:first-child
+{
+	font-weight: bolder;
+	font-size: 30px;
+}
+#uja p:first-child
+{
+	font-size: 40px;
+}
+#uja p:nth-child(2)
+{
+	font-size: 25px;
+}
+#footer p:nth-child(2)
+{
+	font-size: 15px;
+	text-transform: uppercase;
+}
+#uja p:nth-child(3),
+#footer p:nth-child(3)
+{
+	font-size: 40px;
+}
+
+#footer p:nth-child(4)
+{
+	font-size: 10px;
+}
+#footer p:nth-child(2n+1)
+{
+	color:#99999A;
+}
+#footer p:nth-child(2n)
+{
+	color:white;
+}
+#uja p:nth-child(2n+1)
+{
+	color: #3b75b3;
+}
+#uja p:nth-child(2n)
+{
+	color: #818084;
+}
+#uja div:first-child,
+#footer div:first-child
+{
+	width: 100%;
+	display: inline-block;
+}
+#footer #partners
+{
+	padding: 15px 0px 15px 0px;
+	position: relative;
+	bottom: -5px;
+	width: 100%;
+	display: inline-block;
+	background-color: #E3E4E5;
+}
+#junta
+{
+	margin-left: 45px;
+}
+#feder
+{
+	margin-left: 20px;
+}
+#junta,#feder
+{
+	float: left;
+}
+
+.region-footer1 a:hover
+{
+	background-color: transparent !important;
+	color: black;
+}
+
+@media(max-width: 768px){
+
+	#uja p:first-child
 	{
-		min-height: 315px;
-		padding: 0px;
-		border:0px;
-	    background-image: url("../images/partner.png");
-	    background-repeat: no-repeat;
-	    background-size: cover;
-	    background-position: 50%;
+		font-size: 25px;
 	}
-@media(min-width: 951px){
-	.footer
+	#footer p:first-child
 	{
-		 background-size: cover;
+		font-size: 25px;
+	}
+	#uja p:nth-child(2)
+	{
+		font-size: 12px;
+	}
+	#footer p:nth-child(2)
+	{
+		font-size: 9px;
+		text-transform: uppercase;
+	}
+	#uja p:nth-child(3)
+	{
+		font-size: 21px;
+	}
+	#footer p:nth-child(3)
+	{
+		font-size: 20px;
+	}
+
+	#footer p:nth-child(4)
+	{
+		font-size: 10px;
 	}
 }
-@media(max-width: 950px){
-	.footer
+@media(min-width: 768px){
+
+	#uja p:first-child
 	{
-		background-size: contain;
+		font-size: 40px;
+	}
+	#footer p:first-child
+	{
+		font-size: 25px;
+	}
+	#uja p:nth-child(2)
+	{
+		font-size: 17px;
+	}
+	#footer p:nth-child(2)
+	{
+		font-size: 11px;
+		text-transform: uppercase;
+	}
+	#uja p:nth-child(3)
+	{
+		font-size: 29px;
+	}
+	#footer p:nth-child(3)
+	{
+		font-size: 28px;
+	}
+
+	#footer p:nth-child(4)
+	{
+		font-size: 10px;
+	}
+}
+@media(min-width: 992px){
+
+	#uja p:first-child
+	{
+		font-size: 40px;
+	}
+	#uja p:nth-child(2)
+	{
+		font-size: 22px;
+	}
+	#footer p:nth-child(2)
+	{
+		font-size: 15px;
+		text-transform: uppercase;
+	}
+	#uja p:nth-child(3)
+	{
+		font-size: 38px;
+	}
+	#footer p:nth-child(3)
+	{
+		font-size: 37px;
+	}
+
+	#footer p:nth-child(4)
+	{
+		font-size: 10px;
+	}
+}
+@media(max-width: 1200px){
+
+	header[id="navbar"]
+	{
+		margin-top: 10px!important;
 	}
 }
