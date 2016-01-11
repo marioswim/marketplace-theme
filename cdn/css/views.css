@@ -1,7 +1,4 @@
-#views-bootstrap-grid-1
-{
-	margin-right: 10px;
-}
+
 #views-bootstrap-grid-1  .col
 {
 	margin-left: 15px;
@@ -126,50 +123,13 @@
 {
 	display: none;
 }
-.page-list-products #edit-populate-wrapper,
-.page-research-group #edit-populate-wrapper
-{
-	margin-top: 28px;
-	width: 100%;
-	padding: 22px 19px;
-    display: block;
-    height: 157px;
-    background-size: cover;
-}
-.page-list-products #edit-populate-wrapper
-{
-	 background-image: url("../images/FONDO_BUSQUEDA_PRODUCTOS.png");
-}
-.page-research-group #edit-populate-wrapper
-{
-	 background-image: url("../images/FONDO_BUSQUEDA_GRUPOS.png");
-}
-.page-list-products #edit-populate-wrapper label,
-.page-research-group #edit-populate-wrapper label
-{
-	font-size: 23px;
-	color:white;
-	font-weight: normal;
-}.page-list-products #edit-populate-wrapper input,
-.page-research-group #edit-populate-wrapper input
-{
-	width: 500px;
-	height: 50px;
-	font-size: 18px;
-	font-weight: 700;
-	color: #3b75b3;
-	display: inline-block;
 
-}
 /*
 #views-bootstrap-grid-1 .info .groups b:hover
 {
 	color:rgb(0, 85, 128);
 }*/
-#views-bootstrap-grid-2
-{
-	margin-right: 10px;
-}
+
 #views-bootstrap-grid-2 .row 
 {
 	margin-top: 15px;
@@ -185,12 +145,12 @@
 #views-bootstrap-grid-2 .video
 {
 	width: 100%;
-	height: 172px;
+	height: 174px;
 }
-#views-bootstrap-grid-2 .video iframe
+#views-bootstrap-grid-2 .video img
 {
 	width: 100%;
-	height: 172px;
+	height: 100%;
 }
 #views-bootstrap-grid-2 .info
 {
@@ -237,7 +197,6 @@
 }
 .info .title a:hover #tooltip:before
 {
-	
     content: "";
     position: absolute;
     z-index: 99;
