@@ -76,10 +76,12 @@ function placeHolder($)
 	{	
 	case "es":
 		$(".page-research-group #edit-populate-wrapper input").attr("placeholder","Buscar");
+		$(".front  #edit-populate-wrapper input").attr("placeholder","Buscar");
 		$(".page-list-products #edit-populate-wrapper input").attr("placeholder","Buscar");
-
+		$(".page-list-products #edit-field-keywords-tid-wrapper select").attr("data-original-title","Dejar en blanco, o seleccionar el primer elemento para volver a la opción por defecto.");
 		break;
 	case "en":
+		$(".front  #edit-populate-wrapper input").attr("placeholder","Search");
 		$(".page-research-group #edit-populate-wrapper input").attr("placeholder","Search");
 		$(".page-list-products #edit-populate-wrapper input").attr("placeholder","Search");
 		break;

@@ -1,0 +1,100 @@
+.front .views-submit-button
+{
+	display: none;
+}
+.page-list-products #edit-populate-wrapper,
+.page-list-products #edit-field-keywords-tid-wrapper,
+.page-research-group #edit-populate-wrapper,
+.front #block-views-exp-productos-page-1 .views-exposed-widgets,
+.front #views-exposed-form-research-group-page-1 
+{
+	margin-top: 28px;
+	width: 100%;
+	padding: 22px 19px;
+    display: block;
+    height: 157px;
+    background-size: cover;
+}
+.front #block-views-exp-productos-page-1 .views-exposed-widgets
+{
+	margin-top: 0px;
+	background-image: url("../images/FONDO_BUSQUEDA_PRODUCTOS_FRONT.png");
+}
+.front #views-exposed-form-research-group-page-1
+{
+	margin-top: 0px;
+	background-color: #285C94;
+	background-position-x:100%;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-image: url("../images/FONDO_BUSQUEDA_GRUPOS_FRONT.png");
+}
+.page-list-products #edit-populate-wrapper,
+.page-list-products #edit-field-keywords-tid-wrapper
+{
+	float: left;
+	width: 50%;
+}
+.page-list-products .views-exposed-widgets
+{
+	 background-image: url("../images/FONDO_BUSQUEDA_PRODUCTOS.png");
+	 background-size: 100% 47.5%;
+	 background-repeat: no-repeat;
+	 background-position-y:100%;
+}
+.page-research-group #edit-populate-wrapper
+{
+	 background-image: url("../images/FONDO_BUSQUEDA_GRUPOS.png");
+}
+.page-list-products #edit-populate-wrapper label,
+.page-list-products #edit-field-keywords-tid-wrapper label,
+.page-research-group #edit-populate-wrapper label,
+.front #block-views-exp-productos-page-1 label,
+.front #views-exposed-form-research-group-page-1 #edit-populate-wrapper label
+{
+	font-size: 23px;
+	color:white;
+	font-weight: normal;
+}
+.page-list-products #edit-populate-wrapper input,
+.page-list-products #edit-field-keywords-tid-wrapper select,
+.page-research-group #edit-populate-wrapper input,
+.front #block-views-exp-productos-page-1  #edit-populate-wrapper input,
+.front #views-exposed-form-research-group-page-1 #edit-populate-wrapper input
+{
+	width: 100%;
+	height: 50px;
+	font-size: 18px;
+	font-weight: 700;
+	color: #3b75b3;
+	display: inline-block;
+
+}
+.page-research-group #edit-populate-wrapper input
+{
+	width: 500px;
+}
+
+.page-list-products #edit-field-keywords-tid-wrapper .input-group,
+.page-list-products #edit-populate-wrapper input
+{
+	margin-top: 37px;	
+	height: 50px;
+}
+.front #block-views-exp-productos-page-1  #edit-populate-wrapper input,
+.front #views-exposed-form-research-group-page-1 #edit-populate-wrapper input
+{
+	margin-top: 15px;
+}
+.page-list-products #edit-field-keywords-tid-wrapper .input-group input
+{
+	height: 50px;
+	color: #3b75b3;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+#block-views-exp-productos-page-1 #edit-field-keywords-tid-wrapper .views-widget
+{
+	display: none;
+}
