@@ -1,12 +1,18 @@
+.main-container>.row
+{
+	margin-top: 15px;
+}
 .front .col-lg-7
 {
-	padding-right: 10px;
+	padding-right: 15px;
 }
 .front .col-lg-5
 {
-	padding-left: 0px;
+	padding-right: 0px;
+	border-left: 1px solid #d8dadc;
 }
-.front #edit-populate-wrapper
+.front #block-views-exp-productos-page #edit-populate-wrapper,
+.front #block-views-exp-productos-page #edit-field-keywords-tid-wrapper
 {
 	display: none;
 }
@@ -14,7 +20,7 @@
 #block-views-research-group-block-1 .block-title
 {
 	border-bottom: 1px solid #d8dadc;
-	margin-right: 10px;
+
 }
 #block-views-productos-block-1 .block-title span,
 #block-views-research-group-block-1 .block-title span
@@ -66,4 +72,21 @@
 .front #views-bootstrap-grid-1 .info .description p
 {
 	max-height: 85px
+}
+
+@media(max-width: 1200px){
+
+	.front .col-lg-5
+	{
+		border-left: 0px solid ;
+	}
+	.front .region-content
+	{
+		margin-bottom: 15px;
+	}
+	.front .region-content2
+	{
+		/*border-top: 1px solid #d8dadc;*/
+		padding-top: 15px;
+	}
 }
