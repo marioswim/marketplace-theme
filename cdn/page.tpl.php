@@ -72,6 +72,13 @@
  *
  * @ingroup templates
  */
+$otri="OTRI UJA";
+$slogan=t("Innovation, Technology and Knowledge Transfer to the Company");
+$oferta=t("R+D+i OFFER OF THE UNIVERSITY OF JAEN");
+$uja=t("Knowledge and Technology Transfer Office · Vice-RectorShip of Society Relationship and Labour Insertion · University of Jaén");
+$theme_path=path_to_theme();
+global $language;
+
 ?>
 <div id="language" class="navbar container">
   <?php if(!empty($page["language"])): ?>
@@ -79,8 +86,17 @@
   <?php endif; ?>
 </div>
 <div id="uja" class="container">
+  <div id="text">
+    <a href='<?php echo "/".$language->prefix; ?> '>
+      <p><?php echo $otri; ?></p>
+      <p><?php echo $slogan; ?></p>
+      <p><?php echo $oferta; ?></p>
+    </a>
+  </div>
+  <img src='<?php echo "/".$theme_path."/images/ujaen_header.png"; ?>' id="ujaen">
 
   <div class="container" id="Logos">
+
     <?php if ($logo): ?>
       <a class="logo navbar-btn pull-left" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
         <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
@@ -184,7 +200,24 @@
     <?php print render($page['partner']); ?>
   </footer>
 <?php endif; ?>
-<div class="footer">
+<div id="footer"class=" container">
+  <!--<div id="junta"></div>
+  <div id="feder"></div>-->
+  <div>
+    <div id="text">
+    <p><?php echo $otri; ?></p>
+    <p><?php echo $slogan; ?></p>
+    <p><?php echo $oferta; ?></p>
+    <p><?php echo $uja; ?></p>
+  </div>
+    <img src='<?php echo "/".$theme_path."/images/ujaen_footer.png";?>' id="ujaen">
+  </div>
+  <div id="partners">
+    <img src='<?php echo "/".$theme_path."/images/junta.png";?>' id="junta">
+    <img src ='<?php echo "/".$theme_path."/images/feder.png";?>' id="feder">
+  </div>
+</div>
+<div class="container" >
   <?php if(!empty($page["footer1"])): ?>
     <div class="col-lg-4">
         <?php print render($page["footer1"]); ?>
@@ -200,4 +233,6 @@
         <?php print render($page["footer3"]); ?>
     </div>
   <?php endif; ?>
+
 </div>
+  
