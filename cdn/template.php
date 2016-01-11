@@ -18,29 +18,24 @@ function MarketPlace_field($variables)
 {
 	//dpm($variables);
 	$output='';
-	switch ($variables["element"]["#title"]) {
-		case 'Sector Productivo':
+	switch ($variables["element"]["#field_name"]) {
+		case 'field_sector_productivo':
 
-			$output.='<div class="'.$variables["classes"].'">';
+			$output=someValues($variables);
 
-				 if(!empty($variables["label"]))
-					$output.='<div class="field-label">'.$variables["label"].'</div>';
-				
+			break;
+		case 'field_inventores':
 
-				$output.='<div class="field-items">';
-					$output.='<div class="field-item">';
-						$aux="";
-						for($i=0;$i<count($variables["items"]);$i++)
-						{
-							$aux.='<p>'.$variables["items"][$i]["#markup"].'</p>';							
-						}
-						$output.=$aux; 
-					$output.='</div>';
-				$output.='</div>';
-			$output.='</div>';
+			$output=someValues($variables);
 
 			break;
 		
+		case 'field_keywords':
+
+			$output=someValues($variables);
+
+			break;
+
 		default:
 			
 			$output.='<div class="'.$variables["classes"].'">';
@@ -58,8 +53,8 @@ function MarketPlace_field($variables)
 			break;
 	}
 	
-	
-	return $output;
+
+		return $output;
 }
 
 function MarketPlace_breadcrumb($variables)
@@ -129,23 +124,26 @@ function MarketPlace_breadcrumb($variables)
 	}
 	
 }
+function someValues($variables)
+{
+	$output="";
 
-/*
-function MarketPlace_breadcrumb($variables) {
-  $breadcrumb = $variables['breadcrumb'];
+	$output.='<div class="'.$variables["classes"].'">';
 
-	$url = $_SERVER['HTTP_REFERER'];
-	$path = preg_replace('/\//','',parse_url($url,PHP_URL_PATH),1);
-	$path=explode("/",$path);
-	$new_breadcrumbs=array();
-	$lan=$path[0];
-	$type=$path[1];
-	//dpm($breadcrumb);
-	if($type =="research-group" || $type=="grupo-investigacion")
-	{
-		$new_breadcrumbs[0]='<li>'.$breadcrumb[0].'</li>';
-		$new_breadcrumbs[1]='<a href="/'.$lan.'/'.t($type).'/">'.t($type).'</a>';
-		$new_breadcrumbs[2]='<li class="'.$breadcrumb[1]["class"].'">'.$breadcrumb[1]["data"].'</li>';
-	}
-	return '<ol class="breadcrumb" >'.implode(" / " ,$new_breadcrumbs).'</ol>';
-}*/
+		if(!empty($variables["label"]))
+			$output.='<div class="field-label">'.$variables["label"].'</div>';
+		
+
+		$output.='<div class="field-items">';
+			$output.='<div class="field-item">';
+				$aux="";
+				for($i=0;$i<count($variables["items"]);$i++)
+				{
+					$aux.='<p>'.$variables["items"][$i]["#markup"].'</p>';							
+				}
+				$output.=$aux; 
+			$output.='</div>';
+		$output.='</div>';
+	$output.='</div>';
+	return $output;
+}
