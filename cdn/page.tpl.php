@@ -179,8 +179,8 @@ global $language;
         }
         else
         {
-          $content_class="col-lg-7 ";
-          $content2_class="col-lg-5";
+          $content_class="col-lg-8";
+          $content2_class="col-lg-4";
         }
       ?>
       <div class ="<?php echo $content_class; ?>">
