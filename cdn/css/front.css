@@ -2,11 +2,11 @@
 {
 	margin-top: 15px;
 }
-.front .col-lg-7
+.front .col-lg-8
 {
 	padding-right: 15px;
 }
-.front .col-lg-5
+.front .col-lg-4
 {
 	padding-right: 0px;
 	border-left: 1px solid #d8dadc;
@@ -76,7 +76,7 @@
 
 @media(max-width: 1200px){
 
-	.front .col-lg-5
+	.front .col-lg-4
 	{
 		border-left: 0px solid ;
 	}
