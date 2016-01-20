@@ -113,14 +113,23 @@
 	text-align: justify;
 }
 
-
-
-
-
-
 .node-type-grupo-investigaci-n footer,
 .node-type-producto footer,
-.node-type-patente footer
+.node-type-patente footer,
+.node-type-p-gina-b-sica footer
 {
 	display: none;
+}
+
+.page-contact .page-header,
+.node-type-p-gina-b-sica .page-header
+{
+	background-color: #062D62;
+    background-image: url("../images/CABECERA_CONTENIDOS_AZUL.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 45px;
+    min-height: 80px;
+    color: white;
+    padding-top: 20px;
 }
