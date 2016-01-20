@@ -69,16 +69,29 @@ function MarketPlace_breadcrumb($variables)
 	$end=strripos($variables["breadcrumb"][0], '"');
 
 	$lan=substr($variables["breadcrumb"][0], $start+1,$end-$start-1);
-
 	switch (node_type_get_name($node)) 
 	{
 	 	case 'Research Group':
-	 	for($i=1;$i<count($variables['breadcrumb'])-1;$i++)
+	 	case 'Grupo Investigación':
+	 	
+		 	if(count($variables['breadcrumb'])==3)
+		 	{
+		 		array_pop($variables["breadcrumb"]);
+		 		$aux=$variables["breadcrumb"][count($variables['breadcrumb'])-1];
+		 		$variables["breadcrumb"][count($variables['breadcrumb'])-1]=
+	 			array(
+	 				"data" => $aux,
+		 			"class" => array(0=>"active"));
+
+		 	}
+		 	
+		 	for($i=1;$i<count($variables['breadcrumb'])-1;$i++)
  			{
- 				if(isset($breadcrumb["breadcrumb"][$i]["class"]))
+
+ 				if(isset($variables["breadcrumb"][$i]["class"]))
  					$breadcrumb.='<li ="'.$variables["breadcrumb"][$i]["class"][0].'">'.$variables["breadcrumb"][$i]["data"].'</li>';
  				else
- 					$breadcrumb.='<li>'.$variables["breadcrumb"][$i]["data"].'</li>';
+ 					$breadcrumb.='<li>'.$variables["breadcrumb"][$i].'</li>';
  			}
  			$path=drupal_get_path_alias("research-group");
 
@@ -87,12 +100,24 @@ function MarketPlace_breadcrumb($variables)
 	 		break;
 	 	
 	 	case 'Product':
-	 	for($i=1;$i<count($variables['breadcrumb'])-1;$i++)
+	 	case "Producto":
+
+		 	if(count($variables['breadcrumb'])==3)
+		 	{
+		 		array_pop($variables["breadcrumb"]);
+		 		$aux=$variables["breadcrumb"][count($variables['breadcrumb'])-1];
+		 		$variables["breadcrumb"][count($variables['breadcrumb'])-1]=
+	 			array(
+	 				"data" => $aux,
+		 			"class" => array(0=>"active"));
+
+		 	}
+	 		for($i=1;$i<count($variables['breadcrumb'])-1;$i++)
  			{
- 				if(isset($breadcrumb["breadcrumb"][$i]["class"]))
+ 				if(isset($variables["breadcrumb"][$i]["class"]))
  					$breadcrumb.='<li ="'.$variables["breadcrumb"][$i]["class"][0].'">'.$variables["breadcrumb"][$i]["data"].'</li>';
  				else
- 					$breadcrumb.='<li>'.$variables["breadcrumb"][$i]["data"].'</li>';
+ 					$breadcrumb.='<li>'.$variables["breadcrumb"][$i].'</li>';
  			}
 
  			$path=drupal_get_path_alias("list-products");
@@ -105,10 +130,10 @@ function MarketPlace_breadcrumb($variables)
  			
  			for($i=1;$i<count($variables['breadcrumb']);$i++)
  			{
- 				if(isset($breadcrumb["breadcrumb"][$i]["class"]))
+ 				if(isset($variables["breadcrumb"][$i]["class"]))
  					$breadcrumb.='<li ="'.$variables["breadcrumb"][$i]["class"][0].'">'.$variables["breadcrumb"][$i]["data"].'</li>';
  				else
- 					$breadcrumb.='<li>'.$variables["breadcrumb"][$i]["data"].'</li>';
+ 					$breadcrumb.='<li>'.$variables["breadcrumb"][$i].'</li>';
  			}
 
  			break;
