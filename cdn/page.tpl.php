@@ -217,22 +217,21 @@ global $language;
     <img src ='<?php echo "/".$theme_path."/images/feder.png";?>' id="feder">
   </div>
 </div>
-<div class="container" >
+<div class="container" id="footer-links">
   <?php if(!empty($page["footer1"])): ?>
     <div class="col-lg-4">
         <?php print render($page["footer1"]); ?>
     </div>
   <?php endif; ?>
   <?php if(!empty($page["footer2"])): ?>
-    <div class="col-lg-4">
+    <div class="col-lg-5">
         <?php print render($page["footer2"]); ?>
     </div>
   <?php endif; ?>
-  <?php if(!empty($page["footer3"])): ?>
-    <div class="col-lg-4">
-        <?php print render($page["footer3"]); ?>
+  
+    <div class="col-lg-3 footer3">
+        <span>© OTRI •  UNIVERSIDAD DE JAEN • 2016</span>
     </div>
-  <?php endif; ?>
 
 </div>
   

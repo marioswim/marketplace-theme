@@ -13,12 +13,7 @@
 {
 	min-height: inherit;
 }
-#block-locale-language h2,
-#block-menu-menu-login h2,
-#block-menu-menu-perfil-y-logout .block-title
-{
-	display: none;
-}
+
 #block-locale-language ul
 {
 	list-style: none;
@@ -189,12 +184,6 @@ header[id="navbar"] ul  li a.active
 {
 	float: left;
 }
-
-.region-footer1 a:hover
-{
-	background-color: transparent !important;
-	color: black;
-}
 #block-socialnetwork-socialnetwork
 {
 	height: 0px;
@@ -322,4 +311,44 @@ header[id="navbar"]
 div[class="navbar-collapse collapse"]
 {
 	padding: 0px;
+}
+#footer-links
+{
+	padding: 0px;
+}
+#block-locale-language h2,
+#block-menu-menu-login h2,
+#block-menu-menu-perfil-y-logout .block-title,
+#block-menu-menu-pol-tica-de-privacidad .block-title
+{
+	display: none;
+}
+.region-footer1 a,
+.region-footer2 a
+{
+	color:#888;
+}
+
+
+.region-footer1 a:hover,
+.region-footer2 a:hover
+{
+	background-color: transparent !important;
+	color: black;
+}
+
+.footer3
+{
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #3b75b3;
+    text-align: center;
+    color: #87b5f7;
+    font-size: 13px;
+}
+
+#toolbar .toolbar-drawer
+{
+	display: inline-block;
 }
