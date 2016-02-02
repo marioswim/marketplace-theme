@@ -194,13 +194,14 @@
 	border-radius: 5px;
 	color:white;
 	position: absolute;
-	bottom: 100%;
+	bottom: 89%;
 
 }
 .info .title a:hover #tooltip:before
 {
     content: "";
     position: absolute;
+    right: 23px;
     z-index: 99;
     border:1px solid #454347;
     border-width: 16px 16px 0 16px;
