@@ -4,7 +4,7 @@
 }
 .front .col-lg-8
 {
-	padding-right: 15px;
+	padding-left: 0px;
 }
 .front .col-lg-4
 {
@@ -76,10 +76,25 @@
 
 @media(max-width: 1200px){
 
+	.front .col-lg-8 .row
+	{
+		margin-left: 0px;
+		margin-right: 0px
+	}
+	.front #views-bootstrap-grid-1 .col
+	{
+		margin-left: 0px;
+	}
+	.front .col-lg-8
+	{
+		padding-right:0px;
+	}
 	.front .col-lg-4
 	{
 		border-left: 0px solid ;
+		padding-left: 0px;
 	}
+
 	.front .region-content
 	{
 		margin-bottom: 15px;
