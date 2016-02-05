@@ -87,6 +87,13 @@
 {
 	margin-top: 20px;
 }
+@media(min-width: 200px){
+	.page-list-products #views-bootstrap-grid-1 .row,
+	.page-research-group #views-bootstrap-grid-1 row
+	{
+		margin-right: 0px;
+	}
+}
 @media(max-width: 768px){
 
 

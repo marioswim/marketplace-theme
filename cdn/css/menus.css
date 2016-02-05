@@ -95,6 +95,12 @@
 	text-decoration: none;
 	font-weight: bold;
 }
+@media(max-width: 507px){
+	#edit-field-sector-productivo-tid-wrapper .bef-select-as-links .form-item >div
+	{
+		width: 50% !important;
+	}
+}
 @media(max-width: 768px){
 	
 	#edit-field-sector-productivo-tid-wrapper .bef-select-as-links .form-item >div

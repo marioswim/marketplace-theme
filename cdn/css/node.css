@@ -133,3 +133,9 @@
     color: white;
     padding-top: 20px;
 }
+
+.node-type-producto .image img,
+.node-type-grupo-investigaci-n .image img
+{
+	height: auto;
+}
