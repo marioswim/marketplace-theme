@@ -93,6 +93,12 @@
 	{
 		margin-right: 0px;
 	}
+	#views-bootstrap-grid-1 .info,
+	#views-bootstrap-grid-1 .info .description,
+	#views-bootstrap-grid-1 .info .description p
+	{
+		font-size: 10.5px;
+	}
 }
 @media(max-width: 768px){
 
@@ -106,7 +112,12 @@
 }
 @media(min-width: 768px){
 
-
+	#views-bootstrap-grid-1 .info,
+	#views-bootstrap-grid-1 .info .description,
+	#views-bootstrap-grid-1 .info .description p
+	{
+		font-size: 14px;
+	}
 }
 @media(min-width: 992px){
 
@@ -118,6 +129,17 @@
 	{
 		width: 48.5%;
 	}
+
+	.row .col:nth-child(2n+1)
+	{
+		margin-left: 0px !important;
+	}
+	.row .col:nth-child(2n)
+	{
+		margin-left: 30px !important;
+	}
+
+
 
 }
 .page-list-products .page-header,
@@ -171,7 +193,7 @@
 
 #views-bootstrap-grid-2 .info .grupo
 {
-	    font-size: 11px;
+	 font-size: 11px;
     font-weight: 700;
     color: #aeafb1;
 }
