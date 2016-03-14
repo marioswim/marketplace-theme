@@ -74,7 +74,7 @@
 	max-height: 85px
 }
 
-@media(max-width: 1200px){
+@media(max-width: 1199px){
 
 	.front .col-lg-8 .row
 	{
@@ -104,4 +104,9 @@
 		/*border-top: 1px solid #d8dadc;*/
 		padding-top: 15px;
 	}
+}
+
+.front #views-bootstrap-carousel-1 img
+{
+	min-height: 150px;
 }
