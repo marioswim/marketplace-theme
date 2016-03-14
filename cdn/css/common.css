@@ -297,13 +297,7 @@ header[id="navbar"] ul  li a.active
 	}
 
 }
-@media(max-width: 1200px){
 
-	header[id="navbar"]
-	{
-		margin-top: 10px!important;
-	}
-}
 header[id="navbar"]
 {
 	padding-right: 0px;
@@ -348,8 +342,23 @@ div[class="navbar-collapse collapse"]
     color: #87b5f7;
     font-size: 13px;
 }
-
+/*
 #toolbar .toolbar-drawer
 {
 	display: inline-block;
 }
+
+*/
+.main-container .row > .col-sm-12
+{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.main-container .row,
+.navbar-header,
+#navbar .container>.navbar-collapse 
+{
+	margin-right: 0px !important;
+	margin-left: 0px !important;
+}
+
